@@ -112,6 +112,8 @@ Theoretical uncertainties from scale and choice of NNLO programme are mentioned 
 \NOTEJH{I think that stating that the tolerance covers scale varations might be a stretch. We can just say that we have examined the impact of scale variation for some important cross sections, but a comprehensive treatment of scale variations in our global PDF fit is beyond the scope of this paper.}\\
 
 \NOTEJG{Agree with Joey. It's hard to quantify how the tolerance could cover the scale variations.}\\
+\NOTEKX{For some data set, such as ATLAS $W,Z$ 7 TeV, we have explored the impact of different NNLO codes, and obtained the conclusion that the difference is negligible. For the ATLAS 8 TeV $Z~p_T$ data, we have explored the scale variations. The conclusion is that the difference in $\chi^2$ between the best and nominal scales is small, but the theoretical predictions differ an overall shift.
+}\\
 
 {\bf Experimental data sets fitted}
 \TODO{Write a general comment on the selection of experiments that the CT18 data was frozen in 2018 based on the PDFSense and ePump studies. It takes several weeks or months to validate the data sets.}
@@ -152,7 +154,7 @@ On a similar theme, why no ATLAS 8 TeV $W$ (1904.05631) or Z (1710.05167)? \\
 \noindent 
 And strangest of all why are ATLAS inclusive jets 7 TeV fitted using the correlation model of ATLAS 8 TeV inclusive jets, but ATLAS 8 TeV jets themselves are not fitted? (1706.03192)  \\
 %\TODO{$\to$ Tim}
-\NOTEJH{Before the data can be used in our global PDF fits, we must have completed published correlated systematic errors available. Although the 8 TeV jet data was published some time ago, this systematic error information became available only recently.}\\
+\NOTEJH{Before the data can be used in our global PDF fits, we must have completed published correlated systematic errors available. Although the 8 TeV jet data was published some time ago, this systematic error information became available only recently,  even though one of us had been consistently pushing. Private conversations with ATLAS authors resulted in the 8 TeV correlation model being applied to the 7 TeV jet data.}\\
 \NOTETIM{Joey, this was my understanding also --- thanks.  I think your comment above
 can essentially go directly into the reply.}\\
 
@@ -162,6 +164,7 @@ Have you ever thought of including the HERA jet data (multiple sets). Has any se
 \TODO{No, in the past these data sets were not sensitive. We can do a new sensitivity study. $\to$ Tim, T.-J.}
 \NOTECPY{This is for future study, not needed for this paper.}\\
 \NOTEJG{I recall the NNLO predictions may be available with fastNNLO tables from NNLOJet. Thus this data set can be included easily.}
+\NOTEJH{The data do not have a great sensitivity in a global PDF fit, due to the relatively limited kinematic range and non-negligible statistical and systematic errors.}
 
 
 \noindent
@@ -203,6 +206,8 @@ I am struck by how there is not much decrease of uncertainty in Fig 7, except pe
 \TODO{$\to$ C.-P., Joey}
 \NOTECPY{We could show the ratio-to-own-best-fit plot of $g$-PDF, which shows that the $g$-PDF uncertainty band shrinks in all-$x$ vales. 
 However, we don't see noticeable changes in the other falvors. Note a small enlarged error band in ${\bar u}$ at $x$ around $10^{-3}$.}\\
+\NOTEJH{It would be useful perhaps to show the gluon uncertainty bands for CT14HERA2 and CT18 to more closely see where the gluon uncertainty is
+(slightly) reduced. I suggested to Pavel and Tim that we might make a L2 plot showing the sensitivity of all new LHC data sets individually, adding the non-LHC experiments into one curve, showing the tensions that exist among the LHC data, making difficult the reduction of uncertainty that may be naively expected. Another, somewhat more intensive, exercise would be to remove for example the ATLAS and CMS 7 TeV jet data sets, leaving only the CMS 8 TeV jet data set, to see the impact on the high x gluon and its uncertainty. Those two data sets have opposite sign L2 to the 8 TeV jet data. }
 
 
 \noindent
@@ -236,7 +241,7 @@ Parton luminosities are enhanced in the low mass region for CT18Z, to what exten
 Fig 16 is very interesting. PDFs are diverging again. There are probably many different reasons. The world needs to be more aware of this.
 \REPLY{And that was even before COVID-19 struck!}
 \NOTECPY{Haha! It is what it is!}\\
-\NOTEJH{In 2015, detailed studies of the then 3 global PDFs were carried out over the course of a year. The understanding gained from those studies lead to the PDF4LHC15 PDFs. Since that time a great deal of LHC data has been added to the various global fits. A followup study is currently underway to try to better understand the impact of the LHC data on each global PDF.}\\
+\NOTEJH{In 2015, detailed studies of the then 3 global PDFs were carried out over the course of a year. The understanding gained from those studies lead to the PDF4LHC15 PDFs. Since that time a great deal of LHC data has been added to the various global fits. A followup study is currently underway to try to better understand the impact of the LHC data on each global PDF. Note that the MMHT20 gluon PDF does not seem to have changed much since MMHT2014, at least in its central value.}\\
 
 
 \noindent
@@ -255,6 +260,7 @@ wish exactly to attract a lattice audience.}\\
 
 It says that you optimize the values of the nuisance parameters. Looking at the appendix I think you just calculate them analytically. Is optimize the right word? It somehow suggests manipulating them.
 \TODO{They are optimized by solving algebraic equations. Maybe we could use a better word.}
+\TODO{I would just say "determined".}
 
 \noindent
 {\bf In section A.2} 4th paragraph mentions ATLAS 8 TeV inclusive jet data- this must be a mistake, you have only ATLAS 7 TeV jet data (and 8 teV $Z$ $p_T$) somehow these got run together in the sentence.
@@ -310,7 +316,8 @@ is a secondary effect modestly reinforcing this trend.}\\
 \noindent
 The ATLAS $Z$ $p_T$ 8 TeV data seem to need a lot of massaging? And even after that the lumi shift is 2$\sigma$. I would not be bothered about the odd nuisance parameter taking a value 2 but it is undesirable in a luminosity error because these are usually box distributions not gaussians in reality. Is this data set really worth the amount of messing about with cuts, scales etc?  
 \TODO{$\to$ C.-P., Joey, Keping}
-\NOTECPY{We should keep this part of discussion.}\\
+\NOTECPY{We should keep this part of discussion.}
+\NOTE JH{Mandy has a fair point here. We expect to have some 2 sigma shifts for systematic errors, but are uncomfortable when they turn out to be important ones. We could see what happens if we constrained this normalization shift to be <=1 sigma. }\\
 
 \noindent
 As noted earlier under sensitivities the CMS 7 and 8 TeV jet data do not agree well with each other with some large nuisance parameters—but to my mind having a lot of nuisance parameters around zero is also problematic, since we are assuming a normal distribution—any comment?  
@@ -320,7 +327,8 @@ As noted earlier under sensitivities the CMS 7 and 8 TeV jet data do not agree w
 \noindent
 Top quark pair production Figs. 41 and 42 error bars are calculated including both statistical and correlated systematics? I thought the plots were only going to show the uncorrelated error bars?  
 \TODO{200430 $\to$  Joey}
-\NOTECPY{This was Joey's suggestion.}\\
+\NOTECPY{This was Joey's suggestion.}
+\NOTEJH{I forget the exact discussion about Fig. 41. I know I was worried about Fig. 42, which many readers may assume is incorrect because of how it looks. }\\
 
 \noindent
 For dimuon production the description given of the theoretical calculation does not inspire confidence, frankly. Not that this is any fault of the authors!  
@@ -339,7 +347,8 @@ explanation on why we believe it is trustworthy in the CT18 NNLO global analysis
 
 There are many Intrinsic charm models shown on Fig. 48 so the statement that their shift is opposite to that from CT18 to CT18A is not at all clear. Anyway I think the idea is that intrinsic charm will not help with the tension between ATLAS $W$, $Z$ 7 TeV and HERA?  
 \TODO{Check the text and reply here. $\to$ Tim, Marco, T.-J.?}
-\NOTECPY{For BHPS models, the $g$-PDF in the large-$x$ region (around 0.2) is larger than CT18A, while the difference between CT18A and CT18 is mainly on $s$-PDF. Note that FIg. 48 shows two axises along the change of $g$ and $s$ PDF directions.}\\
+\NOTECPY{For BHPS models, the $g$-PDF in the large-$x$ region (around 0.2) is larger than CT18A, while the difference between CT18A and CT18 is mainly on $s$-PDF. Note that FIg. 48 shows two axises along the change of $g$ and $s$ PDF directions.}
+\NOTEJH{Maybe we should also comment on how probably each of these IC models is based on the increase(decrease) in chisquare.}\\
 %
 \NOTETIM{I thought our initial discussion was quite clear on this point, but I belive I can
 think of an even more direct phrasing.  The point is that the shifts from all IC models
