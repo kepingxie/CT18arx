@@ -1,0 +1,959 @@
+\documentclass[aps,prd,amsmath,nofootinbib,floatfix,fleqn]{revtex4}
+\setlength\mathindent{0pt}
+
+\pdfoutput = 1
+
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx}
+\usepackage{bm}
+ \usepackage[utf8]{inputenc}
+ 
+ \usepackage{float}
+ \usepackage{epsfig}% need for subequations
+
+\setlength{\paperheight}{11in}
+
+
+\definecolor{darkblue}{rgb}{0.0,0,0.5}
+\definecolor{darkgreen}{rgb}{0.0,0.3,0.0}
+\definecolor{redish}{rgb}{0.675,0,0.2}
+\definecolor{red}{rgb}{0.8,0,0}
+\definecolor{green}{rgb}{0,0.6,0}
+
+\usepackage[unicode=true, bookmarks=false, linkcolor = darkblue, citecolor = redish, breaklinks=false, colorlinks=true, hyperfootnotes=true]{hyperref}
+
+\newcommand{\TODO}[1]{\textcolor{magenta}{
+\quad\vspace{3pt} \\ {\bf To do:} #1 \\
+}}
+
+\newcommand{\REPLY}[1]{\textcolor{redish}{\quad \\
+{\bf Reply:} #1 \\
+}}
+
+\newcommand{\NOTE}[1]{\textcolor{red}{ \bf[NOTE: #1]}}
+\newcommand{\NOTECPY}[1]{\textcolor{green}{ \bf[NOTE: CPY -- #1 ]}}
+\newcommand{\NOTEJH}[1]{\textcolor{darkgreen}{ \bf[NOTE: JH -- #1 ]}}
+\newcommand{\NOTEPN}[1]{\textcolor{darkblue}{ \bf[NOTE: PMN -- #1 ]}}
+\newcommand{\NOTETIM}[1]{\textcolor{olive}{ \bf[NOTE: TIM -- #1 ]}}
+\newcommand{\NOTEJG}[1]{\textcolor{brown}{ \bf[NOTE: JG -- #1 ]}}
+\newcommand{\NOTEKX}[1]{\textcolor{teal}{ \bf[NOTE: KX -- #1 ]}}
+\newcommand{\NOTEMG}[1]{\textcolor{teal}{ \bf[NOTE: MG -- #1 ]}}
+
+\begin{document}
+
+\date{\today}
+\title{New CTEQ global analysis of quantum chromodynamics\\ with high-precision data
+from the LHC:\\ Reply to the referees} 
+\maketitle
+
+\section*{Instructions}
+
+The PRD version of the manuscript: \url{https://slack-files.com/T010C2DGN7N-F0120PMQUCB-100b5c457d}.\\
+
+1. Use LaTeX commands {\tt \textbackslash TODO\{...\}}, {\tt \textbackslash REPLY\{...\}}, {\tt \textbackslash NOTE\{...\}}, {\tt \textbackslash NOTECPY\{...\}},{\tt \textbackslash NOTEJH\{...\}},
+{\tt \textbackslash NOTEPN\{...\}}, {\tt \textbackslash NOTETIM\{...\}}.
+
+\vspace{6pt}
+{\bf Examples:}\\
+
+{\tt \textbackslash TODO\{List what needs to be done. Include your initials to mark the portions of the reply you are working on.\}}
+\TODO{List what needs to be done. Include your initials to mark the portions of the reply you are working on.}
+
+{\tt \textbackslash REPLY\{Report the changes that were made.\}}
+\REPLY{Report the changes that were made.}
+
+
+\textcolor{redish}{We thank both referees for their useful comments and suggestions. We have modified the review in quite a number of places in response. Some of the changes are quite significant and we believe that the paper will be more useful as a result.}
+
+\section{Report of Referee A}
+
+\TODO{After this task is completed, we will go through the whole report and insert the replies to the referees' questions or to-do assignments when some work is necessary.\\\\}
+
+{\bf Referee:} I read this paper with great interest and pleasure. It is well written and should be published. 
+\REPLY{We are glad that the referee found the manuscript interesting and deserving a publication.} 
+I have various levels of questions and comments (and some typos) that I would like the authors to consider. The length of this report reflects the level of my interest rather than any fault of the others.
+\REPLY{We are grateful for these thoughtful comments and address them below in turn.}
+
+My most general comment is that it is perhaps unfortunate that there are now 4 varieties of CT18. It is bound to lead to confusion. It is well explained that CT18 and CT18Z represent two extremes and that CT18 is in some sense ‘the main’ fit. So readers are bound to ask, do you distrust the ATLAS W,Z 7 TeV high luminosity data? Or do you think a reasonable approach to PDF uncertainties would be to take an envelope of CT18 and CT18Z in addition to the usual PDF uncertainties? As the authors, CT should probably take a lead on this since users will do a variety of things.
+\TODO{Discuss it at the meeting. Mention strong goodness-of-fit criteria, the experience with publishing CT10W and CT10}
+\NOTEJH{We should emphasize that CT18 is the main product of this analysis and should be used for most predictions at the LHC. My opinion: CT18X and CT18Z differ the most from CT18 due to the choice of scale at low x. This choice of scale is basically an hypothesis and so should not be considered in typical calculations of PDF uncertainty. CT18A differs from CT18 only through the use of the ATLAS 7 TeV W/Z data. This data set is powerful but in some disagreement with other data sets sensitive to the strange quark distribution. This could be considered a reasonable range of uncertainty for the strange quark.}
+
+{\bf Introduction}
+Fine
+
+
+\NOTECPY{The comments made below, marked as ``CPY'', result from the discussions with Sayip and Tie-Jiun.}\\ 
+
+{\bf Executive Summary}
+
+It is clear why the gluon increases at low-x with the $\mu_{F,x}$ scale but it is not clear to me why the strangeness also does so, do you have any intuitive feel for this? \\
+ 
+\NOTECPY{Comparing CT18X to CT18, we don't see large changes in ${\bar u}$, ${\bar d}$ or ${s}$ PDFs in the small $x$ region.}\\
+
+\noindent
+The use of H1 $F_L$ data as well as the HERA-II combined is to some extent double counting—any
+comment? \\
+
+\NOTECPY{Yes, the referee is correct about the double counting, since reduced cross sections also depend on $F_L$. The total $\chi^2$ value of H1 $F_L$ data (ID=169) becomes smaller, not larger, in the CT18X fit, as compared to CT18. The same conclusion also holds for the small-$x$ H1 $F_L$ data.}\\
+
+\noindent
+ The $S_E$ variable is ~5 for HERA data which suggests there is something wrong with these data and yet this is the one data set that one cannot leave out, so somehow this is odd? At the very least it has to mean that including data with such high $S_E$ values is not a sin — as in the ATLAS $W$, $Z$ 7 TeV data. \\
+
+\NOTECPY{Referee is asking: If we accepted the large $S_E$ value (5.65) from HERA I+II, why not from ATLAS $W$, $Z$ 7 TeV data (with $S_E=4.78$)?
+The main concern we have about the  ATLAS $W$, $Z$ 7 TeV data lies on the fact that we have observed tension of this data with some (NuTeV and CCFR) of the global fit data, which prefer different $s$-PDF. 
+}\\
+\NOTEPN{Recall that we evaluate the global fits based on the combination of the total $\chi^2$ and strong goodness-of-fit tests. Introduction of the ATL7ZW data set introduces difficulties with some of these tests, such as the $S_E$ distribution.}
+
+\noindent
+Theoretical uncertainties from scale and choice of NNLO programme are mentioned here, it gives one the impression that these will be included in the PDF uncertainties, but in the end they are just discussed, maybe that could be stated here? 
+\TODO{Need to write a section explaining the CT18 tolerance and the fact that the tolerance is adjusted to cover solutions for alternative parametrizations, scale choices, data point selections.}
+
+\NOTEJH{I think that stating that the tolerance covers scale varations might be a stretch. We can just say that we have examined the impact of scale variation for some important cross sections, but a comprehensive treatment of scale variations in our global PDF fit is beyond the scope of this paper.}\\
+
+\NOTEJG{Agree with Joey. It's hard to quantify how the tolerance could cover the scale variations.}\\
+
+{\bf Experimental data sets fitted}
+\TODO{Write a general comment on the selection of experiments that the CT18 data was frozen in 2018 based on the PDFSense and ePump studies. It takes several weeks or months to validate the data sets.}
+
+I first noticed that ID=145 is H1 beauty data and ID=147 is combined HERA charm, but in fact there is now combined HERA charm and beauty arXIV:1804.01019 that supersedes these. Why was this not used? I can only imagine that some more recent data sets were not included because they are recent, but 1804 is not THAT recent!
+\TODO{1804 was published too late to be included, and we still cannot fit with acceptable $\chi^2$! Write a reply $\to$ Marco}
+\REPLY{M.G. - The new combined charm and bottom production measurements from the H1 and Zeus collaborations have been investigated by the CT authors.
+In their current version, when these measurements replace the previous ones in the CT18 global fit, they cannot be fitted with a reasonable $\chi^2$.
+Moreover, a mild tension is observed between these new combined data and several CT18 data sets such as the LHCb 7 and 8 TeV $W/Z$ production data, $Z$-rapidity data at CDF run II,
+CMS 8 TeV single inclusive jet production, and $t\bar{t}$ double differential $p_T$ and $y$ cross section. Therefore, we decided not to include these data in the CT18 global analysis
+as they require a dedicated investigation.
+In the H1+ZEUS analysis published in 1804.01019, the $\chi^2$ for these measurements is also found not to be good. In 1804.01019, this is ascribed to a difference
+in the slope between data and theory in the intermediare/small $x$ region. A NNLO theory including small-$x$ resummation effects by NNPDF3.1 does not seem to improve the situation.
+In our attempt to fit the new charm and bottom data sets, we have noticed a preference for a harder gluon at intermediate/small $x$.
+We are currently studying these data. In particular, we are exploring the impact of the new correlated systematic uncertainties: they increased from 42 in the old version of the data, to 167 in the new version.
+We are going to publish a new analysis in a separate forthcoming paper.
+We added a paragraph in the paper to address this point at Pag. 7 of the manuscript, before the Subsection ``Selection of new LHC experiments''.}
+
+
+
+\noindent
+Table I:  I find it slightly curious that the older ATLASWZ7 TeV $35pb^{-1}$ is worse fitted by CT18Z since its strangeness is certainly enhanced like that of CT18Z (how about CT18A?)\\
+\NOTECPY{The larger part (4 out of 6 in $\Delta \chi^2$) of the different $\chi^2$ values of the the older ATLASWZ7 TeV $35pb^{-1}$ data, shown in Table I, is due to the increase in $R^2$ value of that data in the CT18Z fit. Similar conclusion also holds when comparing to the CT18A fit.}\\
+\NOTEJG{Indeed the worsen of $\chi^2$ in CT18Z is true for all LHC charge asymmetry data which depends on different flavor combination than strangeness.}\\
+
+
+
+\noindent
+Was there a reason to chose ATLAS 8 TeV $Z$ $p_T$  rather than ATLAS 8 TeV $Z+jets$ (1907.06728), or
+indeed $W+jets$ (1711.03296)? I ask this because the $Z$ $p_T$ seems to have caused various problems needing cuts and an extra 0.5\% uncertainty. I suspect the $V+jets$ data sets may be too ‘recent’ again? I am pretty sure it is not because there is no sensitivity because potential data sets without sensitivity are at least discussed in the paper. 
+\TODO{These data sets were too late to include}
+\NOTEJH{In the region where the fixed order prediction for Z pT is dominant (away from the resummation region), this measurement is theoretically more robust and experimentally more precise than that of Z+jets.This is in addition to the other distributions being too late.}
+
+\noindent 
+On a similar theme, why no ATLAS 8 TeV $W$ (1904.05631) or Z (1710.05167)? \\
+\TODO{Too late to include}
+
+\noindent 
+And strangest of all why are ATLAS inclusive jets 7 TeV fitted using the correlation model of ATLAS 8 TeV inclusive jets, but ATLAS 8 TeV jets themselves are not fitted? (1706.03192)  \\
+%\TODO{$\to$ Tim}
+\NOTEJH{Before the data can be used in our global PDF fits, we must have completed published correlated systematic errors available. Although the 8 TeV jet data was published some time ago, this systematic error information became available only recently.}\\
+\NOTETIM{Joey, this was my understanding also --- thanks.  I think your comment above
+can essentially go directly into the reply.}\\
+
+
+\noindent 
+Have you ever thought of including the HERA jet data (multiple sets). Has any sensitivity study been done? 
+\TODO{No, in the past these data sets were not sensitive. We can do a new sensitivity study. $\to$ Tim, T.-J.}
+\NOTECPY{This is for future study, not needed for this paper.}\\
+\NOTEJG{I recall the NNLO predictions may be available with fastNNLO tables from NNLOJet. Thus this data set can be included easily.}
+
+
+\noindent
+When $t\bar t$ are discussed you simply say that you select a few spectra compatible with the fit. You refer to other studies on possible incompatibilities. I think just an extra sentence on the conclusion of those studies- about the poor fits to the rapidities -would be helpful. Footnote 1 should probably refer to ATLAS-PHYS-PUB-2018-017 as well as to AM Cooper-Sarkar. 
+\TODO{$\to$ Joey and C.-P.}
+\NOTECPY{We need to re-examine the statement of picking up the 573 $t \bar t$ data. Based on Table II and Fig. 3 of our 2D-ttbar paper, none of them (ID=573-577) can modify the uncertainty band of $g$-PDF. We can only observe very small change of best-fit $g$ PDF in large-$x$ ($> 0.4$) region.}\\
+
+\NOTEJH{We worried about choosing only one distribution, and which distribution that should be, without showing bias. The release of the statistical correlations allowed the use of two distributions (but those only after the decorrelation of some systematic errors. It was impossible to get reasonable chisquares for the rapidity of the top and of the top pair, similar results to those obtained by MMHT and by the ATLAS PDF fitters.}\\
+\NOTEPN{Are all ATLAS8ttb double-differential distributions included in our default data directories? The ATLAS 8 TeV $y_{t\bar t}$ and $y_{t}$ rapidity distributions, while having  only five points each, prefer a much lower $g(x,Q)$ at $x\sim 0.3$ than the best fit and especially CMS 8 TeV jet data. We cannot get a low enough $\chi^2$ for the ATLAS 8 TeV $t\bar t$ rapidity distributions, and including them does not improve the PDF uncertainties because of the tensions with much larger jet production data sets that are revealed by the dedicated studies based on the Lagrange Multipliers and $L_2$ sensitivities.}
+\TODO{200430 Pavel will repeat the CT18 fit with both ATL8 y\_ttbar and y\_t data sets included.}
+
+
+\noindent
+Since the date of publication of CT18 will in fact be in 2020 I think that at least some comments should be made on those data that were not included because they were too late? 
+\TODO{Yes}
+
+
+\noindent
+There remains the question of why ATLAS 7 TeV $W$, $Z$ high luminosity is such a problem for CT, it does not seem to have caused NNPDF or MMHT such problems. More of that later since there is a discussion later
+\TODO{Discuss. MMHT and NNPDF see at least some of the difficulties in fitting ATL7ZW as we do. $\chi^2_E/N_{pt,E}$ for this data set depends a lot on the various assumptions, see Sec. A.3. $\to$ C.-P. and Keping}
+
+
+{\bf Theoretical inputs}
+
+
+In reviewing the goodness of fit function I note that CT still shift the data rather than the prediction by the correlated systematics*nuisance parameters. Whereas this appears equivalent it is not quite in practice because experimental errors are often given as fractional or percentage and there is then a choice whether to multiply by the data or the prediction to get the absolute value. When data is far from prediction this can matter and lead the contribution of the correlated systematics to be ‘out of kilter’ with the size of the uncorrelated systematics. I am sure the authors are familiar with the arguments on this choice, have they any comment? 
+\TODO{200430 Discuss our previous studies of additive and multiplicative systematic errors. $\to$ Joey}
+\NOTEJG{We do multiply to theory for most cases, right? Besides, not quite understand the second last sentence from the referee.}
+
+\noindent
+The use of smoothed k-factors and addition of an extra 0.5\% uncertainty for the inclusive jets (and $Z$ $p_T$) strikes me as a good idea, but other PDF groups do not do it, so a comment about that might be in order?
+\TODO{In which place of the CT18 paper can this comment be included? $\to$ Keping}
+\NOTEJH{We can say the remaining jitter after the smoothed K-factor justifies the additional uncorrelated uncertainty. We have exmained the impact of this additional uncertainty and although it does result in a better chisquare it does not lead to appreciable changes in the resultant PDFs.}\\
+\NOTEKX{The 0.5\% MC uncertainty is estimated the fluctuations of $K$-factor points deviated from the smoothed curves.}
+
+{\bf The CT18 output}
+
+I am struck by how there is not much decrease of uncertainty in Fig 7, except perhaps the gluon at higher $x$, and indeed not much change in PDFs except for low-$x$ strangeness.
+\TODO{$\to$ C.-P., Joey}
+\NOTECPY{We could show the ratio-to-own-best-fit plot of $g$-PDF, which shows that the $g$-PDF uncertainty band shrinks in all-$x$ vales. 
+However, we don't see noticeable changes in the other falvors. Note a small enlarged error band in ${\bar u}$ at $x$ around $10^{-3}$.}\\
+
+
+\noindent
+The summary in Section A.3 is very useful.
+\TODO{Thank and include a link to Sect. A.3 from Sec. 4}
+
+\noindent
+{\bf In section B}\\
+ $\alpha_s(M_Z)$ is discussed. I am slightly worried by the following; some of the input data, DIS and indeed LHC $t\bar t$, have direct NNLO calculations so $\alpha_s$ can be varied consistently at NNLO. However the inclusive jets and the Drell-Yan are done at NLO with $NNLO/NLO$ k-factors. These k-factors must depend on $\alpha_s$. How has this been accounted for?
+ \TODO{Examine which NNLO/NLO $K$ factors are available for alternative $\alpha_s$ values. Focus on inclusive jets and DY first. Recompute the K-factors for a few $\alpha_s$ points? $\to$ C.-P., Keping}
+ \NOTECPY{Keping has doen all the needed calculations.}\\
+ \NOTEJG{Keping calculated the dependence of K-factors on $\alpha_s$. But we need to quantify how that may impact on the outcome of fitted
+ value of $\alpha_s$. Without redo the fit, maybe we can just recalculate the $\chi^2$ with correct K-factors to see how the curve on $\chi^2$ profile changes.}\\
+ \NOTEKX{The impact on $\chi^2$ can be done with the \texttt{xFitter}/\texttt{ePump},  the change of $\chi^2$ is roughly the same as that caused by with different  $K$-factors for the \texttt{FEWZ/MCFM/DYNNLO}. I will provide the exact numbers.}
+ \NOTEPN{Last week, Keping has demonstrated that the scale dependences of the NNLO/NLO $K$-factors is an N3LO effect and is very small numerically. I don't think refitting is necessary. Can we include a small note in the paper and a short reply here to close this issue?}
+\TODO{200430 Keping will finalize the reply and modifications in the paper on this issue.}
+
+\noindent
+{\bf In section C}\\
+Uncertainties on parton luminosities are ‘broadly reduced’ this doesn’t seem quite consistent with the fact that the PDF uncertainties are not much reduced at all?
+\TODO{Joey?}
+\NOTECPY{Referee is right. We need to change the statement.}\\
+\NOTEJH{Agreed}\\
+
+\noindent
+Parton luminosities are enhanced in the low mass region for CT18Z, to what extent is that due to the ‘X’ part of it? How is it for CT18A? Yes I know there is supplementary material but I think just a comment in the main text would be useful. \TODO{Mostly due to the X part -- show the comparisons of bands for CT18, A, X, and Z -- Tim, T.-J.}
+\NOTECPY{It is indeed caused by "X". Namely, the $gg$ luminosity predicted by CT18Z and CT18X almost coincide in the small invariant mass region.}\\
+
+
+\noindent
+Fig 16 is very interesting. PDFs are diverging again. There are probably many different reasons. The world needs to be more aware of this.
+\REPLY{And that was even before COVID-19 struck!}
+\NOTECPY{Haha! It is what it is!}\\
+\NOTEJH{In 2015, detailed studies of the then 3 global PDFs were carried out over the course of a year. The understanding gained from those studies lead to the PDF4LHC15 PDFs. Since that time a great deal of LHC data has been added to the various global fits. A followup study is currently underway to try to better understand the impact of the LHC data on each global PDF.}\\
+
+
+\noindent
+{\bf In section D}\\
+This will mostly be of interest to the lattice community. I did wonder if it would be better as a
+separate short paper?
+\TODO{I would keep it in this paper, but... $\to$ Tim, C.-P., Joey}
+\NOTECPY{It is useful to have this section included.}\\
+\NOTETIM{I feel strongly that we should retain this information.  Much of the motivation
+here is to encourage PDF phenomenologists to consider the lattice implications on their
+fits (and {\it vice vera}) in the spirit of the PDF-Lattice effort.  We also very much
+wish exactly to attract a lattice audience.}\\
+\TODO{200430 If we all agree to keep the Mellin moment section in the paper, can Tim finalize the reply? The CT18 PDFs are used not only for the LHC applications, the Mellin moment section bridges the connection to QCD at the EIC and on the lattice. $\to$ (Tim is writing this, 200506.)}
+
+{\bf Description of Individual data sets}
+
+It says that you optimize the values of the nuisance parameters. Looking at the appendix I think you just calculate them analytically. Is optimize the right word? It somehow suggests manipulating them.
+\TODO{They are optimized by solving algebraic equations. Maybe we could use a better word.}
+
+\noindent
+{\bf In section A.2} 4th paragraph mentions ATLAS 8 TeV inclusive jet data- this must be a mistake, you have only ATLAS 7 TeV jet data (and 8 teV $Z$ $p_T$) somehow these got run together in the sentence.
+I am amused to see that CMS 7 and 8 TeV jet data are not so compatible. \\
+%\TODO{Fix and reply $to$ Tim}
+%
+\REPLY{TIM We thank the referee for pointing out this typo.  In response, we have corrected
+this and also modified the accompanying text to more faithfully describe the content of the LM scan. The competing pulls upon the high-$x$ gluon from the 7 and 8 TeV CMS jet data is a robust finding of our analysis and can be seen in both the LM scan described here as well as the $L_2$ curves.}\\
+
+\noindent
+Paragraph 5, I don’t fully understand the criticism of the MSTW dynamic tolerance and I know a lot about this stuff so other readers will be less sure than me. 
+\TODO{The taken-out LM figure comparing the global and dynamical tolerances on $R_s$ would clarify this point.}
+\TODO{200430 Pavel has finished the $R_s$ scans and will prepare the figures and reply before the next meeting.}
+
+\noindent
+Fig. 22 It is difficult to understand why there are unstable fits for larger $R_s$ values at $x \sim 0.023$, more understandable at larger $x$, where one would not expect such large values. Nevertheless I would expect this to manifest itself as poor $\chi^2$ rather than as instability. The plots are for CT18, I have seen it for CT18Z in an appendix. How about for CT18A? Any comments?
+\TODO{200430 Pavel has finished the $R_s$ scans for CT18A and will prepare the figures and reply before the next meeting.}
+
+
+
+\noindent
+{\bf Section A.3} On the description of the L2 sensitivity just before Equation 22 don’t you mean ‘to the extent its PDF variation is correlated to the $\chi^2_E$ through the correlation angle’, otherwise it doesn’t quite seem to make sense.\\
+\REPLY{TIM We thank the referee for pointing out this typo, which we have corrected in the resubmitted manuscript.}\\
+
+\noindent
+In discussing Fig. 24 you talk about the strong pull of ATLAS $Z$ $p_T$ 8 TeV ID=253 but what I see is ID=204, which I cannot identify?  
+\TODO{Check $\to$ T.-J., Tim}
+\NOTECPY{T.-J. - Check with ePump paper-2, of which Table 3 did not list $g$-PDF. }\\
+%
+\NOTETIM{We emphasize that the discussion surrounding Fig.~24 is primarily intended to highlight some of the more striking features
+and conclusions that can be inferred from the $L_2$ plots.  In fact, far more information than what we chose to highlight can be
+extracted.  Much of the phenomenological discussion in our manuscript explore the impact of the freshly-introduced LHC
+Run-1 data ({\it i.e.}, the experiments listed in Table~II.  In this respect, the ATLAS 8 TeV $Z p_T$ data has the strongest
+pull of the new experiments at the Higgs point of $x=0.01$ and $Q\!\sim\!125$ GeV, approaching that of the E866 $pp$ absolute
+cross sections (Expt.~ID=204) indicated by the referee.  To help clarify this point, we now explicitly point out the strong
+pull of the E866 $pp$ data in the discussion of Fig.~24.}\\
+
+\noindent
+{\bf Section B}
+I see that LHCb data sets are more consistent with the ATLAS $W$, $Z$ 7 TeV and so they are better fitted by CT18Z and presumably by CT18A??
+%
+\TODO{Check $\to$ Tim, T.-J.}
+\NOTECPY{It is due to the combined effects of "A" and "X". For ID=250, the "X" effect is somewhat larger than "A".}\\
+%
+\NOTETIM{While we find it challenging to support a broad statement that the LHCb data are generally more consistent with a particular experiment, more precise statements about the PDF pulls of the LHCb data can be made on the basis of the LM scans
+or $L_2$ plots we show.  For instance, the settings in CT18X result in a qualitative shift in the $L_2$ sensitivity of Exp.~ID=250 to
+the gluon, which, in turn, qualitatively aligns with the gluon pulls of the ATLAS 7 TeV $W/Z$ information.  Ultimately, the inference we draw from our analysis is that the modified
+DIS scale choice in CT18X (and, in turn, in CT18Z) leads to an altered gluon PDF and fit better
+able to accomodate the LHCb data. The subsequent alignment of the LHCb and ATLAS $W/Z$ data
+is a secondary effect modestly reinforcing this trend.}\\
+\TODO{200430 Tim and C.-P. will take a pass on the reply? Tim has edited the text above -- 200506.}
+
+\noindent
+The ATLAS $Z$ $p_T$ 8 TeV data seem to need a lot of massaging? And even after that the lumi shift is 2$\sigma$. I would not be bothered about the odd nuisance parameter taking a value 2 but it is undesirable in a luminosity error because these are usually box distributions not gaussians in reality. Is this data set really worth the amount of messing about with cuts, scales etc?  
+\TODO{$\to$ C.-P., Joey, Keping}
+\NOTECPY{We should keep this part of discussion.}\\
+
+\noindent
+As noted earlier under sensitivities the CMS 7 and 8 TeV jet data do not agree well with each other with some large nuisance parameters—but to my mind having a lot of nuisance parameters around zero is also problematic, since we are assuming a normal distribution—any comment?  
+\TODO{This is discussed in the RMP paper with Dave and Karol. $\to$ Pavel}
+
+
+\noindent
+Top quark pair production Figs. 41 and 42 error bars are calculated including both statistical and correlated systematics? I thought the plots were only going to show the uncorrelated error bars?  
+\TODO{200430 $\to$  Joey}
+\NOTECPY{This was Joey's suggestion.}\\
+
+\noindent
+For dimuon production the description given of the theoretical calculation does not inspire confidence, frankly. Not that this is any fault of the authors!  
+\TODO{Rewrite the description. $\to$ Jun, Marco, Tim, Joey}
+\NOTEJG{I have difficulties on understanding the exact suggestions of the referee.}\\
+\NOTEMG{I agree with Jun on the fact that the referee's comment could have been more specific.
+I am replying to the referee and rewriting the description in a more ``optimistic way'' that hopefully will induce more confidence in the referee.
+Jun, Tim, Pavel, and C.-P., please take a look at it and see if you are happy with it.}\\
+\NOTEPN{Marco's changes merged into the text.}\\
+\NOTEJG{I modified the text slightly based on Marco's version.}\\
+\REPLY{200430 M.G. - In the description of the theory prediction for dimuon production, we describe the implementation of the NLO calculation in the CT18 framework and give an
+explanation on why we believe it is trustworthy in the CT18 NNLO global analysis. We have improved the discussion by rewriting the text in several parts.}
+
+
+{\bf Standard Candles}
+
+There are many Intrinsic charm models shown on Fig. 48 so the statement that their shift is opposite to that from CT18 to CT18A is not at all clear. Anyway I think the idea is that intrinsic charm will not help with the tension between ATLAS $W$, $Z$ 7 TeV and HERA?  
+\TODO{Check the text and reply here. $\to$ Tim, Marco, T.-J.?}
+\NOTECPY{For BHPS models, the $g$-PDF in the large-$x$ region (around 0.2) is larger than CT18A, while the difference between CT18A and CT18 is mainly on $s$-PDF. Note that FIg. 48 shows two axises along the change of $g$ and $s$ PDF directions.}\\
+%
+\NOTETIM{I thought our initial discussion was quite clear on this point, but I belive I can
+think of an even more direct phrasing.  The point is that the shifts from all IC models
+once projected onto the $\sigma(W)-\sigma(Z)$ direction point in just the opposite
+direction to the shift that follows from fitting the ATLAS $W/Z$ data.}\\
+\NOTEMG{I agree with C.-P.. Maybe we can insert his comments in the draft as a further clarification.
+Also, as discussed together with Tim, we believe that we can probably include a few arrows in the figure to highlight the direction of the shifts due to the IC models.
+T.-J. is needed here. If we are happy with this solution, then the reply can be something like this:}
+
+\REPLY{M.G - While we do not see any problem with the description of Fig 48, we have modified the figure
+by highlighting the direction of the shifts due to IC models by using arrows. The conclusion of the referee about the fact that
+the intrinsic charm will not help with the tension between ATLAS $W$, $Z$ 7 TeV and HERA is correct.
+\newline
+%
+To further clarify this point we modified the statement in the manuscript at pag 62 as follows:
+\newline
+\newline
+``...in [57]. For this reason, we...'' $\Longrightarrow$ ``...in [57]. It is worth noting that for BHPS models, the gluon at large-$x$ ($x\approx 0.2$) is larger than in CT18A,
+while the difference between CT18A and CT18 is mainly due to the strange-quark PDF. In this respect, Fig. 48 shows two axes along the change of $g$ and $s$ PDF directions.
+For this reason, we...''
+\newline
+\newline
+and also the following:
+\newline
+\newline
+``...PDF is unlikely to resolve the tensions we describe in detail in Sec. A'' $\Longrightarrow$ ``..PDF is unlikely to resolve the tensions between ATLAS $W/Z$ 7 TeV data
+and HERA which is described in detail in Sec. A.''}
+\NOTEPN{Thanks to CPY, MG, and TIM for the inputs. I am not convinced we need to modify Fig. 48, perhaps just include a short additional  explanation -- let's do it carefully.}
+\TODO{200430 Tim, MG, C.-P. will make tentative changes in the text for the discussion at the next meeting. $\to$ Tim is looking at this now; will update via email, 200506.}
+
+\noindent
+I think something went wrong with the figure caption for Fig. 49 and the second sentence should
+reference ResBos2 rather than ResBos.  
+\TODO{$\to$ C.-P.}
+\NOTECPY{Comparison of the LHCb 7 TeV W and Z data to CT18 predictions, with either NNLO (labeled by CT18), ResBos (labeled by CT18 ResBos) or ResBos2 (labeled by CT18 ResBos2) calculations. The prediction of CT18Z is also shown for comparison.}\\
+
+\noindent
+Nice comparison with $W+c$ 7 TeV from ATLAS, but wasn’t there also some $W+c$ 7 or 8 TeV from
+CMS? There is also new $W+c$ 13 TeV from CMS, but that is probably too recent even for a comparison.
+\TODO{Discuss and/or produce figures. $\to$ Sayip, C.-P., Jun, Keping}
+\NOTECPY{Sayip has a paper on CMS $W+c$ 7 TeV data, see Ref. [177]. 
+The 8 TeV and 13 TeV data are too new (?)  for our paper.}\\
+\TODO{200430 Sayip will present the updated figures for the next meeting.}
+
+
+\noindent
+
+I note the comparison with $t\bar t$ 13 TeV CMS, there is also $t\bar t$ 13 TeV ATLAS (1908.07305). \\ 
+\NOTECPY{The $t\bar t$ 13 TeV CMS data is too new for our paper.}\\
+
+\noindent
+
+In Figs. 51,52,53 it says top/bottom when it should be left/right. Why not show the shifted data as well as unshifted if the point is that the shifts need to be large (for $p_T$ and $m_{t\bar t}$).  
+\TODO{C.-P.}
+\NOTECPY{Yes, it should be left/right. We could not provide the information of shifted data because the systematic error of the data is presented in covariance matrix format. }\\
+\TODO{200430 Fix the main text and reply. $\to$ Tim}
+\NOTETIM{We are grateful to the referee for pointing out this inconsistency in the labeling,
+which we have now fixed in our manuscript.  Regarding the shifted data for the 13 TeV ttbar
+information, we note that these measurements were not released until the CT18 fit was frozen
+for this work.  As such, fitted nuisance parameters and the shifted 13 TeV data have not be
+explicitly computed in CT18, although the qualitative size and kinematic dependence of
+systematic shifts can be inferred from, {\it e.g.}, the analogous 8 TeV data. ({\bf MARCO
+can verify.})}\\
+
+{\bf Discussion and Conclusion}
+Fine\\
+
+
+{\bf AppA}
+The continual references to figures that are actually in other publications is a bit annoying.  
+\TODO{Check at the end}
+
+
+\noindent
+On the $S_E$ plot I note that ATL $W$, $Z$ 7 TeV is no worse than HERA, so this cannot be a reason to exclude it. (Note that simultaneous inclusion of the lower luminosity of ATLAS $W$, $Z$ 7 TeV is NOT double counting. It was a different data set shot in 2010 rather than 2011.) 
+
+\NOTE{We are not going to redo CT18Z with the low-lumi data added. Discuss with C.-P., Joey, and Pavel}\\
+\NOTECPY{Agree. We will stick with the published CT18 analysis.}\\
+
+
+\noindent
+{\bf Section 2} the comparison between the four PDF ensembles is very useful, thank you.  
+\TODO{$\to$ This section may need an expansion. $\to$ C.-P., Tim, Joey}
+
+
+\noindent
+{\bf Section 3} First ‘problematic point’.There is a reference to the ATLAS-epWZ16 analysis as an xFitter analysis saying that it de-emphasizes the experiments that show tension with ATL7ZW, whereas this is strictly true -since these experiments are not fitted-- it is not helpful to refer to AppF at this point because that appendix is about the limitations of profiling and ATLAS-epWZ16 was a full fit. (Albeit with chisq tolerance $T=1$)  
+\TODO{Rephrase $\to$ C.-P., Keping}
+
+\noindent
+Second ‘problematic point’ Does this mean that the instability for large Rs does persist in CT18A fits (as I asked earlier). Anyway I would {\bf STRONGLY PREFER} if the last part of the sentence from the semicolon ‘we hypothesize’ were removed, since it is just a hypothesis and the ABM paper to which it refers has many misconceptions and problems of its own.  
+\TODO{200430 Check and rephrase based on the completed CT18A LM scan. $\to$ Pavel}
+
+\noindent
+In the following paragraph, where MMHT are mentioned you omit to say that they obtained an enhanced
+strangeness for their fit to the ATLZW7 data, whereas you do mention this for NNPDF3.1 so it seems
+inconsistent not to say so explicitly for MMHT.  
+\TODO{Check and add if necessary. $\to$ authors of this section (Tim or Keping?)}\\
+\NOTECPY{Let's present the comparison in $s$-PDF and PDF ratio $R_s$ for CT18, MMHT2014, and NNPDF3.1. Note that the $s$-PDF comparison plot implies a "larger" tension with the di-muon data in both MMHT and NNPDF fit.}\\
+\TODO{200430 T.-J. will make the figure and send the updated text to Tim.}
+%
+\NOTETIM{We thank the referee for this suggestion, which we have adopted. We have incorporated
+a new Figure comparing $s(x,Q)$ from CT18 against MMHT14 and NNPDF3.1 at $Q\!=\!100$~GeV.
+Similarly, we have acknowledged the enhanced strangeness of MMHT14 explicitly in the
+text. INTERNAL: the neighboring $\chi^2$ comparison table(s) actually give values for
+``MMHT19.'' Do we wish to add the same information for MMHT14 (Keping)?
+}\\
+
+\noindent
+You then say that the chisq for the NNPDF and MMHT are ‘within the interval covered by the CT18 fits’But they aren’t really are they? There is no ‘within’, they are higher. {\bf I wouldn’t mind if you just said ‘in the same ball park’.}  
+\TODO{Show the results of the ATLAS7ZW fits with different statistical weights. $\to$ authors of this section (Tim or Keping?)}
+
+\noindent
+There is a rather confusing discussion of W+c following here. It says NNPDF include $W+c$ of CMS
+7 TeV (at NLO) and that this prefers higher strangeness than DIS, especially the ATLAS $W+c$.
+But you were discussing CMS $W+c$ not ATLAS $W+c$ and CMS and ATLAS $W+c$ at 7 TeV do not agree
+so very well. (CMS have always said that their $W+c$ does not want more strangeness). So it is not clear what you are saying here. I agree with the underlying point that we need an NNLO calculation to make any proper sense of $W+c$ data.  
+\NOTECPY{We compare various predictions to $W+c$ ATLAS 7 TeV data in Fig. 50. The comparison to  $W+c$ CMS 7 TeV data was done in Ref. [177], and found good agreement with CT14NNLO PDFs, as shown in Fig. 3. 
+\\ \textcolor{red}{Jun}: Do you have any comments about the NNLO $W+c$ calculation?}\\
+\NOTEJG{I haven't be aware of any groups working on a realistic NNLO calculation for $W+c$, namely with charm quark mass kept exactly. Several years ago at Argonne they were trying to extract that from NNLO calculation of $W+jet$.}
+\TODO{200430 Finish the reply and changes in the text $\to$ C.-P., Jun}
+
+
+\noindent
+This paragraph finishes by casting further aspersions on the MMHT Hessian uncertainty. I am not sure
+this is necessary.  
+\TODO{$\to$ Pavel}
+
+\noindent
+Anyway YES it is true what is said about the differences in the NNLO codes and about the scale
+uncertainty, but what is the bottom line—it seems to be ‘don’t trust the ATLWZ7TeV data’, or is it
+‘don’t trust other analyses of the ATLWZ7 TeV data’. {\bf I would prefer a slightly more neutral tone here!!}  
+\TODO{Say it more politely. $\to$ Joey and Pavel}
+
+{\bf Partb)}
+Discussion of Figs. 60,61,62  \\
+
+\noindent 
+I don’t see that the description with $W^-$ is so bad, or that of $Z$ at rapidities 0.9 and 1.3. One almost expects some such fluctuations. The shifts of the nuisance parameters to 2 also doesn’t seem so bad given that there are 130 odd such correlated systematic sources. I do wish my colleagues would stop identifying more sources than there are data points and stick to the main large ones. The sensitivity plot Fig. 63 is interesting but I note it is actually only nuisance parameters 113 and 120 which come outside $+/-2$. The text makes it sound as if it is all four (i.e. 72 and 129 as well).  
+\TODO{discuss $\to$ C.-P., Joey, Pavel, Tim}
+\NOTECPY{Need to check its consistency with Fig. 63.
+Note that the leading ($\lambda_a$, $r_a$) for ID=248 data in the CT18A fit are 
+(113, 2.015); 
+(129, 1.945); 
+(72, 1.849);
+(125, -1.793);
+(128, -1.721).
+}\\
+\TODO{200430 Tim will take a look}
+%
+\NOTETIM{We agree with the referee's general comments on the description of the $W^\pm/Z$
+data.  Rather, the relevant text was meant to characterize the distribution of residuals,
+especially as shown in the latter two figures.  In the plot showing the bin-by-bin
+residuals, it can be seen that the magnitude for the shifted residuals for CT18A/Z (shown
+in orange/blue) is typically $\sim\!1$ for $W^+$ production, with a few exceptions, whereas for $W^-$, a somewhat larger share of shifted residuals exceeds unity.  Considering the companion
+plot for $Z$ production, these data are described with comparatively very small shifted
+residuals, except for the $|\eta_l| = 0.9, 1.3$ bins as we noted.
+The referee's observations regarding the $\Delta \bar{\lambda}^2_\alpha$ plot for
+Exp.~ID=248 are technically correct, but our point was to draw attention to several of the
+correlated systematics whose nuisance parameters can be closely identified to the behavior
+of the fitted strangeness. In this regard, all four systematics have values of
+$|\Delta \lambda^2_\alpha|$ that either exceed or nearly exceed two units.  In response
+to the referee's comments, we have amended the text to state this point more directly.}\\
+
+
+\noindent 
+In the end I think the only answer is more and more sensitive data. Indeed the $W$ and $Z$ ATLAS data at 8 TeV (mentioned earlier) are relevant and it is a pity they were not included. (And that the corresponding CMS 8 TeV data are only the $W$ asymmetry since the 8 TeV CMS $Z$ measurement has a rogue covariance matrix).  
+\TODO{Comment on the selection of these data sets -- Joey, Jun}
+\TODO{200430 Report here if we discuss the ATLAS 8 TeV W/Z data, and how we should reply to the referee.  $\to$ Keping, T.-J.}
+
+
+{\bf AppB}
+Fine
+
+
+{\bf App C}
+\TODO{$\to$ C.-P., Tim, T.-J.}
+
+I see that $a_1(u_v)=a_1(d_v)$ and similarly for $a_2$. This is no longer usually found to be true in says MMHT fits, though I suppose that the flexibility of the rest of the parametrisation accounts for this over the measured range?  \\
+
+
+\noindent 
+Why $a_6=1+a_1/2$ ? for valence and why $a_5=1+2a_1/3$ for gluon?  \\
+
+
+\noindent 
+It seems counterintuitive that there are more parameters for the $u$ and $d$ sea quarks than for the valence? Also why $a_3=4$ for the sea?  \\
+
+
+\noindent 
+All the low-$x$ $a_1$ powers are the same for the sea and the high-$x$ $a_2$ powers for $\bar u$ and $\bar d$, again I hope this is not too restrictive.  \\
+
+
+\noindent 
+There is mention of additional overall factors for the number and momentum sum rules. This specifies
+the valence and gluon, but it is not quite clearly spelled out how the normalisation works for the sea, in particular how the specific finite value of $R_s$ as $x \to 0$ is imposed? Can this be clarified?\\
+\NOTECPY{All of these are designed to describe how the PDFs behave as $x$ approaching to  0 or 1, while keeping the valence number and momentum sum rules intake. This was explained in Appendix of Ref. [1].}\\
+
+
+
+{\bf AppD}
+Fine
+
+
+{\bf AppE}
+
+
+Only the comment is that this seems to be applying the correlations worked out for 8 TeV ATLAS inclusive jets to 7 TeV inclusive jets, but if Malaescu says it’s OK then it’s OK. Interesting to know that adding the MC uncertainty improves $\chi^2/N_{pt}$ from 1.68 to 1.3, that’s pretty substantial.\\
+%
+%\TODO{$\to$ Tim}
+%
+\NOTETIM{This is precisely correct. We received guidance from the ATLAS experimentalists
+to proceed in this fashion, and carried out a systematic exploration of the effects of using
+the 8 TeV jet decorrelation options. The $\chi^2$ reductions we could achieve with these
+procedures were $\Delta \chi^2 \lesssim 100$, which is comparable to the effects reported
+in the 8 TeV ATLAS paper.  We have slightly expanded the discussion in App.~E to describe
+this and the corresponding treatment of the CMS jet data.}\\
+
+
+{\bf AppF}
+
+
+In reading this appendix it occurs to me that there is almost no mention at all of how the experimental errors are determined for CT18. I suppose it is the usual application of a dynamic tolerance $T^2 \sim 100$ and the Tier 2 sophistication? Just a sentence or two more may make the discussion of the limitations of profiling without accounting for tolerance more meaningful for a non-expert reader. The discussion of different NNLO predictions is interesting although ultimately no uncertainty is applied for this?
+\TODO{The proposal is to add a few sentences on the CT18 tolerance, which covers both experimental and theoretical uncertainties. $\to$ Pavel, C.-P., Tim, who else}
+\NOTECPY{\textcolor{red}{Tim} could draft the first version.}
+
+\section{Report of Referee B}
+{\bf Referee:} 
+The article is a detailed discussion of a major update of the CT set of parton
+distribution functions (PDFs). These are one of the three major sets used
+worldwide for all studies involving protons, or other hadrons as initial state
+particles in high energy collisions, and hence the article is of great
+significance. In general it it thorough and well-explained and hence, should
+clearly be published. 
+\TODO{Nicely thank the referee B here. $\to$ Joey}
+
+However, I have two major issues I feel need to be
+addressed, and then a number of more minor ones. I will consider the major ones
+first, then list the more minor ones in the order in which they appear in the
+article.
+
+The first is that rather than produce one single PDF, with what might be
+considered as some plausible but extreme alternatives, the group produce four
+PDFs of what it seems might be considered reasonably equal standing, CT18,
+CT18X, CT18A and CT18Z. Moreover, it is clear from numerous discussions in the
+article that there is actually more difference between the two extremes, CT18
+and CT18Z, in nearly all respects, than  there is between CT18 and CT14HERA2 or
+even CT14, e.g. the Standard Candle cross sections in section VI.
+This means it is fundamentally important which of the four sets is used for any
+analysis. However, I feel the authors are somewhat obscure in making
+recommendations. One assumes CT18 is the ``default'' set, but if so, how is one
+to regard the others? If one is using the CT PDFs to make a benchmark prediction
+at the LHC should one use CT18 and consider CT18Z as, e.g. an extreme and
+unlikely variation, or include it in some manner (averaging? an envelope?) among
+the likely range of predictions? Similarly, when combing with other PDF sets, as
+in the PDF4LHC prescription, should one again use just CT18. If so, this seems
+problematic, since one of the
+main differences between CT18 and CT18Z is the inclusion of ATLAS 7 TeV $W,Z$
+data which other groups do seem likely to simply include in their standard
+``default'' set. The authors should be much more definite and explicit about how
+one should regard the ``alternative'' sets with inclusion of these ATLAS data
+and/or the modified scale for DIS calculations.
+\TODO{Explain why CT18 is the default set. Maybe we should not use the word "default". These PDF sets are for any range of energies, not just the LHC. The inclusion of CT PDFs into combined PDFs for LHC applications should be discussed separately by the PDF4LHC group, not within the CT group.}
+
+My other major concern is the presentation of the effect of varying the
+parameterisation. From Appendix C it is possible to work out the
+parameterization for the default PDF sets (Though I assume 29 parameters
+includes 3 normalizations, with 3 others being constrained by sum rules? If so
+this should be made more clear.) However, it is not clear at all how the
+variations in III C, i.e. in Fig. 6 are achieved. Much more detail should be
+given on this. Moreover, it is very concerning that in Fig. 6 the default set
+actually seems to be an ``unusual'' set. All alternatives seem to lead to larger
+high $x$ strange quark and down quark, smaller high $x$ up quark and down
+antiquark, and very nearly always larger high $x$ gluon. Indeed, every
+alternative set gives a different shape strange quark and in most cases a
+different shape (in some region) for all other PDFS. In the case of the gluon
+there appear to be 3 sets of alternatives, with varying difference from the
+central default set. It seems likely that the default set is not actually the
+very best fit among these alternatives, and if so, this would be a worrying
+result - why are better fits being disregarded as the best option. Even if this
+is not the case  the authors should clarify why the default set is seemingly an
+outlier among the full set of variations, rather than being somewhere near the
+center of a range of variations, as one might expect. For example, is the
+high-$x$ power of the up quark and down
+quark being set equal even if the data actually prefer them to be different?
+\TODO{Write a section on tolerance discussing how the parametrization uncertainty and other uncertainties are folded into the final PDF uncertainty, as suggested in the reply to referee A. Can we get PDF parametrizations that veer both in positive and negative directions in the unconstrained small and large x regions and include these curves in Fig. 6? $\to$ Pavel, T.-J.}
+\NOTECPY{T.-J. will provide a few more curves onto Fig. 6 to span the shaded region of CT18. Note that Jon's trial PDFs have ${\bar d}/{\bar u}$ decreasing sharply in the large-$x$ region, but CT18 is not doing that. } \\
+\TODO{200430 Discuss parametrizations in Fig. 6 on Monday. $\to$ C.-P., Aurore, Pavel, T.-J.}
+
+There are numerous more minor issues. I list these below.
+
+- Perhaps related to the previous comments, on page 3, second paragraph, it is
+commented that Lagrange Multiplier (LM) constraints have been used to limit PDFS
+where there are few constraints. More details should be provided where relevant.
+\TODO{T.-J., which LM constraints we imposed at small and large x, if any?}
+\NOTECPY{The LM constraints require $R_s$ to be within $[0.2, 2.0]$ at $x=10^{-8}$, and $[0.4, 1.8]$ at $x=10^{-5}$.}
+
+- I suggest outlining what $\mu_{Fx}$ is, when it is first mentioned on page 4.
+\TODO{$\to$ Marco}
+\NOTEMG{It's done.}
+\REPLY{200505 M.G. - We agree with the referee and we added the definition of $\mu_{Fx}$ in the introduction at Pag 4.}
+
+- The authors first mention the heavy flavor structure function data on page 5.
+they should provide a reference here, but also explain why they do not use the
+updates in Eur.Phys.J.C 78 (2018) 6, 473.
+\TODO{$\to$ Marco}
+\NOTEMG{It's done.}
+\REPLY{200505 M.G. - We added a reference to the analysis published in  Eur.Phys.J.C 78 (2018), and also added a paragraph with an explanation at Pag 7 of the manuscript, before the Subsec. ``Selection of new LHC experiments''.}
+
+
+
+
+- On page 7 it is commented that scale choices were investigated as a source of
+theoretical uncertainty. there is no detail of this. What were the results and
+consequent decisions.
+\TODO{The scale choices are included in the definition of the tolerance, will be mentioned in a new subsection. $\to$ Pavel}
+
+- On page 9 the omission of CDHSW data in e.g. CT18Z is mentioned (and referred
+to many times subsequently), with the claim it can be in tension with LHC data.
+However, the ``fit'' to this data in the CTZ fit in Table I is just as good as
+when these data are included. There appears not to be any tension.
+\TODO{Rephrase. It is not a full-blown tension, rather an incompatible pull by the CDHSW data to have an enhanced gluon at large $x$. $\to$ Tim}
+\NOTECPY{It is true. We have never found such a tension in our fits. }\\
+\NOTEPN{``Some disagreement'' is a better word than ``tension''. CDHSW data does pull the large-$x$ gluon to much higher values than the rest of the experiments, as can be seen e.g. from the LM scans.}\\
+\NOTETIM{This point is rather curious --- I do not believe we ever explicitly claim there to
+be tension; rather, we simply qualitatively describe the competing pulls shown in the LM
+and $L_2$ plots. Others like Alekhin et al.~have complained about the scale dependence of
+these data.}\\
+
+
+- At the bottom of page 9 the omission of data due to EW corrections is
+mentioned. In practice some data sets have PI contributions subtracted
+automatically (mainly ATLAS). The authors should mention this, particularly when
+they discuss EW corrections later in the article.
+\TODO{Carl, C.-P., Keping}
+
+- It seems as though the CT fit to the ATLAS 7 TeV $W,Z$ data are rather bad
+compared to some other PDF sets (Table II). There is some comment comparing to
+other PDFs later in the article, but do, for example, some of the alternative
+parameterisations improve the fit to these data?
+\TODO{Not really. Referee A asked a similar question, answer together. $\to$ C.-P., Keping, who else?}
+\NOTECPY{We have tried other parametrization form, as explored by T.-J., but did not find any obvious  improvement in the quality of the fit to this data set.}\\
+
+
+- On page 11 it is mentioned that a $0.5\%$  random error is added to jet data,
+even though the K-factors are fit. This seems excessive, since one would expect
+K-factors to be smooth. Can the authors justify this rather than, e.g. allowing
+some uncertainty in (still smooth) K-factors?
+\TODO{Explain. $\to$ C.-P., Keping, Pavel}
+\NOTECPY{\textcolor{red}{Keping:} please draft the first version.
+Note that adding $0.5\%$ error only improves the $\chi^2$ values, but does not modify PDFs. However, smoothing $k$-factors can modify the PDFs.
+}\\
+
+- On page 12 the inclusion of ATLAS differential top-pair data  is discussed,
+and the choice of the $m_{t \bar t}$ and $p_{T,t}$ mentioned. This seems an odd
+choice, though it is an example in the ATLAS article. Since the statistical
+correlations are now available, and some loosening of correlations is already
+being used, why are all distributions not used?
+\TODO{$\to$ Joey or C.-P.}
+\NOTECPY{We need to re-examine the statement of picking up the 573 $t \bar t$ data. Based on Table II and Fig. 3 of our 2D-ttbar paper, none of them (ID=573-577) can modify the uncertainty band of $g$-PDF. We can only observe very small change of best-fit $g$ PDF in large-$x$ ($> 0.4$) region.}\\
+\NOTEPN{I will have figures about the selection of ttbar data by Thursday.}
+
+
+- On page 12 it is mentioned that ATLAS and CMS $Z p_T$ data are presented as
+normalized distributions. In fact both are also presented as absolute
+distributions, seemingly making the authors' comments redundant?
+\TODO{$\to$ Keping or C.-P.}
+\NOTECPY{In the end of page 10, Sec. IIB6, just below Table II, we stated "the experimentalists presented both the normalized and absolute cross sections..."}\\
+
+- On page 13 it is commented that CMS 8 TeV double differential Drell-Yan data
+provide no impact. Other PDF groups (MMHT and NNPDF) have noted very poor fits
+to these data and concluded likely problems with the uncertainties. Do CT note
+similar issues as well as those they have mentioned?
+\TODO{$\to$ Joey, C.-P., Tim. We may have found in the PDFSense study that these data sets have low sensitivity but are not fitted well.}
+\NOTECPY{This is in the end of Sec. IIB6. \textcolor{red}{Keping:} please check how CT18 compared to this data set, see Ref. [115]. We don't yet have its data table.)}\\
+
+- I assume part of the reason for the improved fit to HERA I+II in CT18X is due
+to an increase in $F_L$ at small $x$ and $Q^2$?
+\TODO{Hard to say, we do not separate $F_L$ in the red. cross section for ID=160. Double-confirm that the fit to the $F_L$ data set 169 improves with the small-$x$ scale. $\to$ Marco, T.-J.}
+\NOTECPY{Yes, the referee is correct about the double counting, since reduced cross sections also depend on $F_L$. The total $\chi^2$ value of H1 $F_L$ data (ID=169) becomes smaller, not larger, in the CT18X fit, as compared to CT18. The same conclusion also holds for the small-$x$ H1 $F_L$ data.}\\
+
+- In the third paragraph of III C, it is stated that the CT18X gluon is reduced
+at $x\sim 0.01$ In Fig. 3 this does not appear to be correct. I assume $x\sim
+0.1$ is meant? There is also enhancement at highest $x$.
+\TODO{$\to$ T.-J., Jun, Marco}
+\NOTECPY{It should read as ``for $x$ at a few times $10^{-2}$."}\\
+
+- on page 17, fourth bullet point. The EW corrections seem to be known
+reasonably well, so these could be applied rather than data cut at high $p_T$?
+\TODO{$\to$ Carl, C.-P., Keping}
+\NOTECPY{\textcolor{red}{Keping:} please draft the first version. }\\
+\NOTEKX{We know the EW corrections, but they will worsen the $\chi^2$.}
+
+- On page 18, refs. 142 and 143 are just confirmations of the original
+calculations. A reference here seems unnecessary.
+\TODO{Bluemlein asked us to include these references in which the MVV results are recomputed. We can include them with the appropriate formulation.}
+
+- In Section III C, I have already commented on issues to do with the
+parameterisation. However, additionally, either here, or later, some
+justification should be made of the precise form of the default choice of
+parameterization.
+\TODO{Can be done in the new section on tolerance.}
+\NOTECPY{Note that we made our choice of the nonperturbative forms to have better agreement on $d/u$ (as $x \to 1$) with CJ15, ${\bar d}/{\bar u}$ (in large $x$ region) with SeaQuest, and $R_s$ (in small $x$, around $10^{-3}$) with ATLAS 7 TeV $W$, $Z$ data as well as Lattice prediction.
+}\\
+
+- I am somewhat bemused by the choice of language regarding the high-$x$ ratio
+of $d/u$ in section IV A 2. A choice of the same $(1-x)$ power for $u$ and $d$
+does not ``allow'' the quarks to approach a constant value, it ``forces'' them
+to, and actually does not ``allow'' them not to approach a constant. Having
+independent powers does not force the ratio to not be constant, it simply
+removes the constraint that they must be constant. This is a misuse of English.
+This is applied in the same manner to the ratio of $\bar d/ \bar u$ a few lines
+later,
+and in other places in the article, and should be clarified. Indeed, the plots
+in Fig. 6 suggest this might be a somewhat unwarranted constraint.
+\TODO{On the contrary, even slightly different values of $a_2(u_v)$ vs. $a_2(d_v)$ will "force" $d/u$ to go only to zero or infinity. The probability support for $d/u$ going to a constant will be zero in this case. $\to$ Tim, T.-J.}
+%
+\NOTECPY{\textcolor{red}{Tim:} please draft the first version.}\\
+\NOTETIM{The referee is being a bit of a pain here. I am revising the manuscript for even
+greater clarity.}
+%\\
+
+- In the upper right of Fig. 9 in CT18ZNNLO there is an extreme narrowing of the
+uncertainty band at $x \sim 0.8$. This is clearly not physical, and should
+ideally be corrected, but at the very least commented on and if possible
+explained.
+\TODO{Is there really a narrowing that Referee B points out, or is it an artifact of our plotting the CT18 Z PDFs? $\to$ Tim, T.-J.}
+\NOTECPY{This is a very good question. I did not notice this feature until now. We found that CT18X has the same feature as CT18Z, as pointed out by the referee. It is not due to numerical accuracy. However, both CT18X and CT18Z use the exact same nonperturbative forms as CT18 and CT18A.}\\
+\NOTEJG{Noticed that CT18Z has larger value of $a_2$ of sea quarks at initial scale thus smaller sea PDFs at large-$x$. Could it be in CT18Z at Q=100 GeV sea quarks at large-$x$ are rather much driven by evolution from valence or gluon? Thus the sea ratios are forced to one and less uncertain.}\\
+
+
+- Page 23, there is a lot of referring forwards in this section, and indeed,
+throughout the article. This is not ideal, and should be reduced if at all
+possible, and more sections made slightly more self-contained.
+\TODO{Comments are welcome.}
+\NOTECPY{\textcolor{red}{Tim:} please draft the first version.}\\
+
+- Page 26. The NLO value of $\alpha_S(M_Z^2)$ is about $0.002$ larger than NNLO.
+This is a very standard type of result, with most other PDF groups noticing
+something very similar. This should be acknowledged and appropriate references
+made.
+\TODO{$\to$ Jun, Marco}
+\NOTEJG{References on $\alpha_s$ studies have been added from NNPDF2.1, MMHT14, ABMP16 and HERAPDF2.0.}
+\REPLY{We have added references on studies of preference of $\alpha_s$ values
+at NLO and NNLO from several PDF groups.}
+
+- At the bottom of the same page it is inferred that there is an advantage in
+using $Q_0=1$ GeV for purposes of best gluon parameterization. If so, why is
+this not used as default? Also, in this study in particular, why is the more
+up-to-date charm structure function data not used?
+\TODO{$\to$ Pavel, Jun, Marco}
+\NOTEJG{Did we say that explicitly? Maybe we should rephrase sentences there, $\to$ Pavel?}
+
+- Page 27, in the third paragraph of part C many comparisons are made with CJ15.
+It would be nice if some of the clear differences were explained.
+\TODO{Differences in what?} 
+\NOTECPY{In Sec. IVA2, we referred to CJ15 for $d/u$ at $x>0.1$. In Fig. 15, we compare to CJ15 and found large difference in $L_{qg}$ and $L_{gg}$.
+The main difference comes from $g$-PDF which is much smaller in CJ15 than in CT18NLO, for $x>0.1$. 
+}\\
+
+
+ - At the end of the next paragraph it is stated that the CT $gg$ luminosity is $2\%$ bigger than MMHT and NNPDF, but MMHT is clearly closer than NNPDF. also,
+any explanation for why the NNPDF $gg$ luminosity at high invariant masses is
+now so much lower?
+\TODO{$\to$ Joey}
+\NOTECPY{What did the referee refer to? In the end of page 27, it states "The CT18 NNLO gg luminosity is approximately $2\%$ smaller than both
+NNPDF3.1 and MMHT14 in the mass range $20 < MX < 300$ GeV.}\\
+	
+	
+
+- Page 28. These plots illustrate my point earlier that CTZ18 is much more
+different from CT18 than is CT14HERA2. Hence, the necessity for a clearer
+recommendation.
+\TODO{To be considered}
+
+- Page 39. The fifth paragraph seems very unclear to me. As I understand it the
+comment can be read as saying that the MSTW dynamic tolerance will give a
+different answer for the uncertainty on a given eigenvector than one based on
+the LM scan. Does this mean that the ``tier-2'' penalty in CT is based on the LM
+scan, and if so, how in detail? If so, this, like the MSTW approach is still
+somewhat intuitive, rather than being based on standard statistical procedures
+which have a rigorous framework. As such, while the two might give different
+answers for cases where there is significant tension between sets, it is far
+from clear that CT is right and MSTW wrong. If one agrees more with the MSTW
+philosophy for determining an eigenvector uncertainty, which is fully explained
+at least, then it implies instead that CT is wrong in these cases. I would not
+like to judge (both seem largely a matter of faith), but the statement made here
+either needs a solid backing or needs modification. Similar comments are also
+repeated later in the text.
+\TODO{$\to$ Pavel, see also a related comment by Referee A}
+
+- Page 44. CMS 7 and 8 TeV jet data seem to pull in the same direction for
+$x>0.3$ as far as I can see. They pull in opposite directions near $x=0.07$.\\
+%\TODO{Verify it $\to$ Tim}
+\NOTECPY{Is this about Fig. 24 and its caption? In that case, ID=542  (7 TeV) and ID=545 (8 TeV) have opposite directions at $x=0.07$ and $x=0.3$.  Their pull have the same direction for $x>0.4$.  Furthermore, Fig. 19 gives consistent information as Fig. 24 for $x=0.01$ and $x=0.3$.}\\
+%
+\NOTETIM{We thank the referee for this observation. The $L_2$ sensitivity plot for $g(x,100\, \mathrm{GeV})$ reveals a complex landscape of competing pulls from the experiments with
+dominant sensitivity to the gluon. In our original text, we wished to draw attention
+to the immediate vicinity of $x=0.3$ for the purposes of comparing with the LM scan
+for $g(x=0.3, Q=125\, \mathrm{GeV})$. For $x \approx 0.3$ in the $L_2$ plot, the 7 and 8
+TeV data are indeed in tension, although the pulls for these sets ultimately
+align at still higher $x > 0.4$. We have slightly expanded our discussion in the
+revised manuscript to address these subtleties.}\\
+
+
+
+- Page 51. Why were the statistical correlations not just included for the data in ref. [98]? In ref. [164] this seems to give a rather different $\chi^2$ for these data, which implies a larger contribution to any increase in $\chi^2$ when determining the tolerance.
+\TODO{$\to$ C.-P., Joey, Sayip, T.-J.}
+\NOTECPY{This is about the $t \bar t$ CMS 8 TeV data, ID=573. They directly provided the data of 2-dim measurement. This is different from the ATLAS data (ID=580), constructed from two 1-dim data sets by utilizing statistical correlations.}\\
+
+- Page 53. similarly, the NNLO corrections to dimuon data give rather
+significant differences in $\chi^2$ for the CT18Z type study. Their omission
+hence seems somewhat questionable. The error from the acceptance correction by
+using NNLO seems likely to be small in comparison. Moreover, many other data
+sets are obtained using acceptance corrections which are not made with NNLO
+Monte Carlos.
+\TODO{$\to$ Jun}
+\NOTECPY{On page 53, just above Fig. 36, we stated ``For CT18Z-charmDIS NNLO, the global $\chi^2$ and the $\chi_E^2$ for the dimuon data are reduced by 11 and 8 units, respectively, compare to CT18Z.'' Note that a reduction of 11 is much smaller than $\Delta \chi^2$ of 100. A reduction of 8 is for a total of 140 data points in the four dimuon data sets.}\\
+\NOTEJG{We should rather emphasis more on the insignificance of $\chi^2$ changes and also mention about on progress of S-ACOT-$\chi$ of CC. See my previous modificantion on text of dimuon section.}\\
+\REPLY{We agree with the referee that the NNLO correction to acceptance might be small. However, the changes of $\chi^2$ is much
+smaller than our usual tolerance. That is also true for the shift of PDF comparing to the total uncertainties. A consistent treatment
+of dimuon production at NNLO in our global analysis requires a S-ACOT-$\chi$ scheme at NNLO that is under development.}\\
+
+- Page 58. In table VIII there is no consistent picture on how the choice on
+inclusion of EW corrections is made, with each data set seemingly different and
+the whole procedure seeming rather {\it ad hoc}. If there is some consistent
+logic being applied it should be explained.  For example, at the end of section
+V C it is noted that the EW corrections for $Z p_T$ data which are fit are
+omitted but can be large. This does not obviously seem like a sensible choice.
+\TODO{$\to$ Carl, C.-P., Keping}
+
+- Page 63. I am not quite sure what to conclude from VI B. Is there a
+conclusion?
+\TODO{$\to$ C.-P.}
+\NOTECPY{We have stated ``For this reason, it is important to compare vector differential cross section measurements to predictions based on  the CT18 (and CT18Z) PDFs with ResBos and NNLO calculations.}\\
+
+- Page 66. When comparing to 13 TeV top pair data in Fig. 51 the systematic
+uncertainties are added in quadrature with uncorrelated. This makes the
+interpretation very indirect. Why not plot shifted data with uncorrelated
+uncertainties as usual. In this case the veracity of the comment on the shape
+difference being accounted for by systematic uncertainties would be clear. It is not at present.
+\TODO{$\to$ Marco, T.-J., C.-P., Joey}
+\NOTECPY{Yes, it should be left/right. We could not provide the information of shifted data because the systematic error of the data is presented in covariance matrix format. }\\
+
+- Page 69. The authors state the potential bias from using a subset of
+distributions from ATLAS top pair differential distributions. However, they use only 2 out of 4, and in $p_T$ and $m_{\bar t t}$ two that are likely to be more
+correlated than one of these and a rapidity distribution. Why not use all four
+to remove bias?
+\TODO{$\to$ Joey, C.-P., Sayip, T.-J., Marco}
+\NOTECPY{We need to re-examine the statement of picking up the 573 $t \bar t$ data. Based on Table II and Fig. 3 of our 2D-ttbar paper, none of them (ID=573-577) can modify the uncertainty band of $g$-PDF. We can only observe very small change of best-fit $g$ PDF in large-$x$ ($> 0.4$) region. We can only use one 2-dim distribution in the fit at a time.}\\
+\NOTEPN{I will have some figures to demonstrate.}
+
+
+- Page 69. I am not sure what the QCD evolution has to do with the stability of
+the gluon to different scale choices for jets. The constraints from other data
+clearly does contribute to the gluon stability. Surely, also, the large
+systematic uncertainty also plays a significant, possibly dominant role, as
+suggested in arXiv:1711.05757, see Fig. 8.
+\TODO{Discuss}
+
+- As mentioned before, the conclusion should explain much more clearly how to
+interpret and use the 4 different CT18 sets.
+\TODO{Discuss $\to$ C.-P., Joey, Pavel}
+
+- Page 76. It is not clear to me what an more flexible strange parameterisation
+should lead to an ``incorrect'' Hessian uncertainty. It is certainly possible
+that a too restrictive parameterisation can lead to problems in fitting data
+with apparent tensions, as numerous PDF groups have noticed in the past, e.g.
+the ATLAS study based on the HERA PDF obtained a $\bar d -\bar u$ with the wrong sign when initially fitting to HERA data and ATLAS data only with a very
+constrained $\bar d -\bar u$ parameterisation. This statement should be made robust or modified. It is currently just an opinion.
+%
+\TODO{$\to$ Tim, Pavel}
+%
+\NOTETIM{I think something of a diplomatic response is probably required here, especially
+if this referee is who we suppose.}\\
+
+- Page 81. In note 3 the uncertainty on $R_s$ actually obtained using the
+dynamic tolerance should be quoted. Then, whether or not it is ``reasonable''
+should be justified rather than stated just as a matter of opinion.
+\TODO{$\to$ Pavel}
+
+- Page 85. I have already commented on this topic. However, I have a number of
+comments specific to this section. It would be helpful if the authors made clear
+exactly what the full set of free paramaters, including normalizations are.
+Also, choices such as (C2), (C4), and $a_3=4$ and $a_8=1$ should have some
+comment/explanation.
+\TODO{$\to$ T.-J., Tim, C.-P.}
+\NOTECPY{All of these are designed to describe how the PDFs behave as $x$ approaching to  0 or 1, while keeping the valence number and momentum sum rules intake. This was explained in Appendix of Ref. [1].}\\
+
+
+- Page 88. the need for decorrelation of systematics in jet data was first made
+by the study in  arXiv:1711.05757.
+
+\NOTETIM{We have added an explicit reference to this article at the
+start of App.~E.}\\
+%
+%\TODO{Add this reference? $\to$ Tim, Joey}
+
+- Page 88. I am not sure what analogous decorrelation for CMS jet data means.
+For the CMS 7 TeV data an extra decorrelation was recommended for the data by
+CMS, as in ref [100,101]. Is this all that is meant here, or something
+additional?
+\TODO{$\to$ Tim, Joey}
+%
+\NOTETIM{The referee is essentially correct. Analogous decorrlation means that we
+applied a very similar prescription to the 7 TeV data as in 1410.6765 with an
+additional decorrelation of the 6th (high) rapidity bin following a private communication
+from a CMS colleague [Voutilainen].  For the 8 TeV CMS information, systematic errors
+were treated with xFitter according to 1607.03663.  We have expanded the relevant
+paragraph in App.~E to explicitly describe these aspects.}\\
+
+Once these minor issues, and more importantly the two major issues are dealt
+with the article may be published.
+
+\section{Other changes}
+
+\end{document}

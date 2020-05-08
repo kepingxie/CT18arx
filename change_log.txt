@@ -1,0 +1,707 @@
+% -  -  -  -  -  -  -  -  -  CHANGE LOG/HISTORY CT18 MAIN PAPER  -  -  -  -  -  -  -  -  -
+
+MAY 6, 2020 11:55pm CDT (200506_TIMv1)
+-> multiple replies and manuscript edits in response to Ref. A
+
+MAY 5, 2020 10:01pm EDT (200505_Marco)
+-> Explanation of why we do not include the new charm and bottom combined measurements from H1 and Zeus coll. included in the manuscript in a paragraph at Pag 7 right before subsec ``Selected LHC...''. This is required by Referee B.
+A Reply is included in the reply-to-referee letter.
+
+MAY 5, 2020 09:58pm EDT (200505_Marco)
+-> definition of muFx scale added in the manuscript at Pag 4 as required by Referee B.
+A Reply is included in the reply-to-referee letter.
+
+MAY 5, 2020 10:25am CDT (200505_TIMv1)
+-> Amended reply and manuscript to include s(x,Q=100 GeV) plot from T.-J. and discussion
+
+Apr 30, 2020 1:10pm CDT (200430PMNv1)
+Updated to-dos in the reply (200430) and merged M.G.'s changes on dimuon production into the main text
+
+Apr 29, 2020 11:15pm CDT (200429_TIMv1)
+-> drafted more replies to referee comments with associated comments
+in-text as noted; changes concentrated on referee comments related to
+L2 plots and data consistency
+
+Apr 29 11:23PM EDT (Marco)
+-> answered to the criticism of the referee related Fig. 48 on the description of the effects induced by the IC. 
+A Possible way out is to slightly modify the figure.
+The text is also changed in a couple of points.
+
+Apr 29 10:12PM EDT (Marco)
+-> answered to the criticism of the referee related to the 
+theory calculation for dimuon production section at Pag 55 of the manuscript. The Subsub sec 4 on Dimuon production has been substantially modified.
+
+Apr 29 5:23PM EDT (Marco)
+-> answered to the point related to the new charm and bottom production.
+this is at Pag 2 of the reply to referee letter 
+in the ``Experimental data sets fitted'' section.
+
+Apr 22, 2020 7:35pm CDT (200422_TIMv1)
+-> dealt with issues in reply and made several associated changes to paper text
+
+Apr 16, 2020 1:20pm CDT (200416PMNv1)
+-> Added "to-dos" in reply.tex
+
+Apr 14, 2020 10:40pm CDT (PMN)
+-> "reply" section added to deal with referee comments
+
+Apr 07, 2020 2:00pm CDT (TIM)
+-> repaired typos in Eq. (E1) [in App. E]
+
+Feb 18, 2020 1:40pm CST (TIM)
+-> implemented changes from C.-P. et al. throughout manuscript
+-> refined/extended discussion of IC in Sec. VI
+
+Feb 18, 2020 12:40am CST (TIM)
+-> incorporated draft discussion of IC in W/Z predictions (will refine further)
+
+Feb 17, 2020 4:40pm CST (TIM)
+-> separated figures into single dir. for Supp. Material
+
+Feb 17 2020, 11:27AM EDT (Marco)
+-> ttbar discussion in Sec VI updated.
+
+Feb 17 2020, 10:55AM EDT (Marco)
+-> ttbar discussion in Sec 3 updated.
+
+Feb 16, 2020 8:00pm CST (TIM)
+-> merged revisions from Carl
+
+Feb 14, 2020 2:40pm CST (TIM)
+-> finished light edits to Sec. VI and App. A
+
+Feb 13, 2020 10:55pm EST (PMN)
+Deleted redundant figure files
+
+Feb 13, 2020 12:15pm CST (TIM)
+-> light edits to Sec.VI.B on ResBos predictions
+
+Feb 13, 2020 12:15pm CST (TIM)
+-> statement added to discussion of EW corrs. for ttbar data
+-> revised discussion of unfitted experiments in Sec. II
+
+Feb 13, 2020 12:15pm CST (TIM)
+-> Added revisions from C.-P., Sayip, and Ibrahim on ResBos calculations in Sec. VI (and light edits to Appendices/Bib.)
+-> light edits to wording in conclusion
+
+Feb 13, 2020 8:15am EST (200213PMNv1)
+-> Finished appendices A and G 
+-> Took out notes in other appendices
+
+Feb 13, 2020 4:30am EST (PMN)
+-> added a paragraph at the end of Sec. 6A tying the plots of W-Z error ellipses in Fig. 47 to the behavior of PDFs. [This paragraph is moved from Appendix A.]
+
+Feb 11, 2020 12:00am CST (TIM)
+-> more revisions to conclusion; added statement on future exps./EIC; ref. added
+
+Feb 11, 2020 10:30pm CST (TIM)
+-> revisions/new text to lattice subsection intro (Sec. IV); lattice-related conclusion (Sec. VII)
+
+Feb 11, 2020 5:50pm CST (TIM)
+-> revisions/smoothing to Sec. V discussion of L1/L2 sensitivities
+
+Feb 11, 2020 3:30pm CST (TIM)
+-> tweaked caption for Exp. ID=253 nuisance parameters
+-> slight edits to text for fixed-target DY plot (Sec. VI); SeaQuest ref. added
+
+Feb 12, 2020, 16:06 EST (PMN)
+Added references to ct18bibtex.bib
+Modified several places to distinguish Bjorken $x_B$ from the momentum fraction x
+
+Feb 12, 2020, 1:31PM EDT (MARCO)
+-> bibliography fixed.
+-> ct18bibtex.bib file updated
+
+Feb 11, 2020 12:30pm CST (TIM)
+-> added clarifications on MC error calculations
+-> further cleaning of EW correction table, Sec. VI
+
+Feb 12, 2020, 11:28 AM EAST (MARCO)
+-> upated Fig. 53 in Sec 06stcandles.tex
+-> caption as also been updated
+-> Joey's comment at line 217 has been deleted as that problem is now fixed.
+
+Feb 11, 2020 11:45pm CST (TIM)
+-> updated fixed-target DY plot in Sec. VI and accompanying text
+
+Feb 11, 2020 9:00pm CST (TIM)
+-> completed revisions to Sec. V.C
+
+Feb 11, 2020 5:00pm CST (TIM)
+-> light edits/corrections to Sec. V, dimuon prod.
+-> revisions to EW correction description in Sec. V
+-> corresponding changes to ttbar EW discussion in Sec. III
+
+Feb 11, 2020, 00:13pm (PMN) 
+Finished updates in Appendices B-F
+
+Feb 10, 2020 10:00pm CST (TIM)
+-> re-wrote Sec VI introduction
+-> edits to Sec. V and EW corrections discussion
+
+Feb 10, 2020 8:00pm CST (TIM)
+-> corrected L2 plots
+
+Feb 9, 2020, 11:13pm (PMN) 
+Fixed the typos in Eq. (B21) and (B23), per Jun's nudging
+
+Feb 9, 2020, 10:47pm EST (200209PMNv1)
+Finished revisions in all Sec. 5.B except the EW corrections.
+Revised Sec. 6C on W+c production to better explain the difference between CT14HERA2 and CT18(Z) PDFs. Minor other changes in Sec. 6.
+
+Feb 8, 2020, 8:02pm EST (PMN)
+Finished modest revisions in Sec. 5.B.1.
+
+Feb 7, 2020 (PMNv1)
+Finished Sec. 5.B.4 on dimuon production. Placed the figures in Sec. 5B closer to the respective subsections.
+
+Feb 4, 2020 (200204PMNv1)
+Improved the format of multiple figures in Sec. 5B
+
+Jan 31, 2020 (TIM)
+-> corrected mistake in abstract
+
+Jan 27, 2020 (TIM)
+-> revisions to Sec. VI and App. A (ongoing)
+
+Jan 26, 2020 (200126PNv1)
+Revised Sec. 5, intro and Sec. 5A, added L1 sentitities; minor changes of labels elsewhere
+
+Jan 24, 2020 (TIM)
+-> working on App. A; added text/fig on nuisance parameter L2-type plot
+
+Jan 22, 2020 (TIM)
+-> rewritten Gottfried SR discussion in Sec. IV to explain large CT uncertainties
+
+Jan 19, 2020 06:08 EST (200119PMNv1)
+-> Finished changes in Sec. 4,
+modified Fig. 18
+
+Jan 16, 2020 (TIM)
+-> relocated Blumlein Refs to Sec. III.C
+
+Jan 15, 2020, 6:13 EST (PMN)
+-> Changes in Secs. 3 and 4.A, edited offline and uploaded. Working
+offline on the rest of Sec. 4 and LM section in Section 5
+
+Jan 12, 2020, 11:53 EST (200112PMNv1)
+-> presentation improvements + minor trimming in Secs. 1 and 2
+
+Jan 8, 2020 (TIM)
+-> created new appendix (G) for Supp. Material
+-> added miscellaneous histograms here
+-> emboldened comments from Joey, Sec. V/VI
+-> light edits in Sec. V
+
+Jan 8, 2020 (TIM)
+-> suggestions for histogram moves in Sec. V added
+-> E906 predictions added to Sec. VI
+
+Jan 12, 2020, 11:53 EST (PN)
+-> presentation improvements + minor trimming in Secs. 1 and 2
+
+Jan 8, 2020 (TIM)
+-> annotations/revisions to Sec. V
+
+Jan 9, 2020 (Joey)
+-> Revisions to Sec. V
+
+Jan 8, 2020 (TIM)
+-> NNLO theory refs. requested by Blumlein added to top of Sec. III
+
+Jan 3, 2020 (PN)
+-> Reduced the length by 50 pages by converting to single-line spacing
+-> Fig. 50: Replaced the four H-T figures by the most recent version with the adjusted lengths of the labels
+
+Dec 20, 2019, 3:15 EST (TIM)
+-> revisions throughout manuscript
+-> consistency checks imposed
+-> explicitly noted lumi nuisance parmater for Exp. ID=253 in Sec. V
+-> added comment about comparison of total uncorr. uncerts. for (un)shifted data
+   in Sec. V
+-> final spelling check run
+
+Dec 20, 2019, 2:43 EST (PMN)
+-> minor changes in Sec. 6
+-> revised Apps. A and B
+
+Dec 19, 2019, 8:22pm EST (TIM)
+-> migrated to new Overleaf project for arXiv submission
+-> removed unused figures; switched to .pdf formatting exclusively
+-> made a spelling pass through document; corrected various inconsistencies
+-> acknowledgements edited; dedication to Jon added
+
+Dec 19, 2019, 12:26pm EST (TIM)
+-> W+c text added near Fig. 53 in Sec. VI
+-> comment requesting for grant info deleted
+-> ttbar figures very slightly scaled-down
+-> ePump ttbar plot added into Sec. VI
+
+Dec 19, 2019, 1:18am EST (TIM)
+-> Completed revisions of App. F on xFitter studies
+-> substantially reworked/clarified
+
+Dec 19 2019 12:57 EST (Marco)
+-> went through Sec V B 1: Legacy tevatron data LHC data: LHCb 
+Substantial rewording. I arrived at Pag. 73.
+
+Dec 18 2019 11:48pm EST (Marco)
+-> Uploaded the revised figures 22 for strange x=0.3 Q=100 GeV. (wiggles removed)
+ 
+Dec 18 2019 10:30pm EST (Marco)
+-> Uploaded the updated figures 21 22 23.
+->Last figure in Fig 23 must be revised.
+-> Uploaded revised figures relative to ttbar CMS 13 TeV Fig 55 56 57 58.
+-> included comments from Joey
+
+Dec 18, 2019, 4:21pm EST (C.-P.)
+-> revised Secs. I-IV
+-> update ct18bibtex.bib and change_log.txt (based on the most recent version, submitted by Pavel.)
+
+Dec 18, 2019, 3:20pm EST (PMN)
+-> Fixed Eq. (4), updated the L2 sensitivity figures, 
+   finished revising Sec 7 and Sec. 5 through Sec. 5B2
+
+Dec 18, 2019, 10:40am EST (TIM)
+-> Implemented revisions from Jun in Sec. V
+
+Dec 17, 2019, 7:00pm EST (TIM)
+-> revisions to Sec. IV.  Clarifications to moments discussion, IV.D
+-> corrected discussion of dbar/ubar ratio
+
+Dec 17, 2019, 4:20pm EST (PMN)
+-> made changes in the discussion of the CT18 alpha_s scan, removed Fig. 13 with probability intervals. Minor changes around the text to mention the two-tier convention for the PDF uncertainties, reconcile notations
+
+Dec 17, 2019, 3:55pm EST (TIM)
+-> corrected upper L_qq panels in Fig. 16
+
+Dec 17, 2019, 1:42pm EST (TIM)
+-> added clarifications to Gottfried SR discussion in Sect. IV
+
+Dec 16, 2019, 11:28pm EST (PMN)
+-> finished Section 4, revised the discussion of the m_c scan to agree with the new Fig. 15
+
+Dec 16, 2019, 9:34pm EST (PMN)
+-> corrected the description of treatment of corr. errors and Sigma-K decomposition for ID=245, 246, 249, 250 in Table 2, Sect. 3, and Appendix B
+
+Dec 16, 2019, 6:11pm EST (TIM)
+-> revised conclusion section, VII
+-> corrected issues in App. A
+
+Dec 16, 2019, 2:52pm EST (191216PMNv1)
+-> made changes in Sections 1, 2,3 to describe specialized PDFs, SACOT-chi heavy-quark scheme for DIS, specify the heavy-quark masses used, clarify the reasons for not including some experiments in Sec. 1.
+
+Dec 16, 2019, 12:26pm EST (TIM)
+-> replaced m_c scan figures with Q0=1.0GeV figures
+
+Dec 16, 2019, 12:05am EST (TIM)
+-> repaired bib conflicts
+
+Dec 15, 2019, 10:50pm EST (C.-P.)
+-> revise App. F and bib file
+
+Dec 15, 2019, 6:27pm EST (TIM)
+-> revisions to App. C-E
+-> typos corrected in Sect. VI
+
+Dec 15, 2019, 6:04pm EST (PMN)
+-> modified text in Sections 1 and 2. Need to resolve the highlighted issues in the discussion of the fitted/not fitted experiments in Section 2, than these sections are ready to go
+
+Dec 15, 2019, 5:32pm EST (TIM)
+-> implemented edits from Tim/Dan to App. A
+-> App. B reviewed/corrected
+
+Dec 13, 2019, 5:48pm EST (TIM)
+-> edits to Sect. IV C_D; CT18 lumi figures updated for consistency
+
+Dec 13, 2019, 1:10pm EST (TIM)
+-> in-progress updates to Sect. IV on lumi plots
+
+Dec 12, 2019, 22:58pm CST (PMN)
+-> revised the discussion of chi^2 in Sec. 3A1 and Appendix B; fixed labels
+   in Fig. 6, Jon's 99 parametrizations
+
+Dec 12, 2019, 7:31pm EST (TIM)
+-> updated v2->v1 nonpert. param. plots, Sect. III
+
+Dec 12, 2019, 7:11pm EST (TIM)
+-> Substantial revisions to App. A.3
+
+Dec 12, 2019, 5:17pm EST (C.-P.)
+-> modified 02, 04,  05, 06, 99app and bib 
+(The issue related to comments on PDFs at x > 0.5 is not yet fixed. 
+App. F is not yet revised.)
+
+Dec 12, 2019, 1:01pm EST (TIM)
+-> truncated precision/revisions to Table X (params) in App. C
+
+Dec 11, 2019, 11:41pm EST (TIM)
+-> text added/revisions in App. A.3
+-> figures streamlined
+
+Dec 11, 2019, 7:38pm EST (TIM)
+-> reviewed/checked moments subsection in Sect. IV
+-> updated figures/tables/discussion for consistency with final CT18(Z)
+
+Dec 11, 2019, 17:30pm CST (191211PMNv2)
+Updated Figures 1, 2, 4, 5, 18-19, 63-69 with uniform colors, labels, the final CT18(Z) PDFs
+
+Dec 11, 2019, 5:08pm EST (TIM)
+-> corrected Data-Theory plot for Expt 281 in Sect. V
+-> expanded caption
+
+Dec 11, 2019, 3:55pm EST (TIM)
+-> fixed issue with precision in \alpha_s in Sect. IV
+
+Dec 11, 2019, 3:42pm EST (TIM)
+-> corrected several minor issues throughout
+-> repaired broken references
+-> removed addressed red comments in Sect. I/V
+
+Dec 11, 2019, 3:00pm EST (TIM)
+changed style of PDF param. comparison plot
+
+Dec 11, 2019, 2:00pm EST (TIM)
+Updated Fig. 6 on PDF parametrization comparisons; .eps files
+
+Dec 11, 2019, 1:00pm EST (TIM)
+Included .eps files for App. A CT18(A/X/Z) PDF comparisons
+
+Dec 11, 2019, 10:37am CST (PN)
+Uploaded missing .pdf files for converted .eps files
+
+Dec 10, 2019, 23:05 CST (PN)
+Updated alphas scans in Figs. 13, 14, 72, 73
+
+Dec 10, 2019: 11:14pm EST (Tim)
+-> PDF notation standardized throughout manuscript
+-> various revisions throughout
+
+Dec 10, 2019: 6:50pm EST (Tim)
+-> New text related to L2 plots added to Sect. V
+
+Dec 10, 2019: 6:23pm EST (Tim)
+-> modified LM scan for dbar/ubar(x=0.3) for compatibility
+-> incorporated into Sect. V
+
+Dec 10, 2019: 5:38pm EST (Tim)
+-> added new text in Sect. V
+
+Dec 10, 2019, 4:13pm EST (PN)
+minor formatting issues in the bibliography and figure floats
+
+Dec 10, 2019: 4:00pm EST (Tim)
+-> Updated residual distribution plot for Exps. 245, 246, 250
+
+Dec 10, 2019: 3:00pm EST (Tim)
+-> Edited PDF moments discussion; references added
+
+Dec 10, 2019: 2:35pm EST (Tim)
+-> Incorporated missing Lumi plots to Sect. IV; addressed comments
+
+Dec 10, 2019: 2:15pm EST (Tim)
+-> Further revisions to Sect. IV and added NLO alpha_s scan/text
+
+Dec 10, 2019: 1:32pm EST (Tim)
+-> implemented additional revisions to Sect. IV
+
+Dec 9, 2019 (KP)
+-> Deal with the ATLAS 8 TeV high-mass DY data
+-> Correct some mistakes in the Expt. data set.
+-> Read up to theoretical calculations.
+
+Dec 9, 2019: 4:48pm EST (Tim)
+-> implemented revisions to Sect. IV
+
+Dec 9, 2019: 4:17pm EST (Tim)
+-> repaired compilation bug in Sect. V
+
+Dec 9, 2019 (C.-P.)
+-> Added a paragraph, with an additional figure (Fig. 50), near the end of Sec. V
+-> Made a few minor corrections in Secs. IV, VII and App. A.
+-> Replaced Fig. 63, for CDHSW data
+  
+Dec 6 2019 (Tim)
+  -> new text added in App. A.3
+  -> comparison of CT, MMHT, NNPDF for ATL7WZ moved from App. F to App. A.3
+
+Dec 6 2019 (Marco)
+-> Marco's changes implemented in 04theory.tex
+-> added luminosity plots with comparisons between CT18 and other PDFs. Fig 17, 18.
+-> added one page of discussion for Fig 17 and 18.
+
+Dec 5 2019 (Marco)
+-> Marco's and Dan's changes implemented 03theory.tex
+
+Dec 05 2019 (120519_TIMv1)
+  -> Edits to App. C, and A.3 (ongoing)
+  -> added new xFitter text from Keping (App. F); references added
+
+Dec 05 2019 (Marco)
+-> minor changes in 02overview.tex
+-> Dan's minor fixes also included in 02overview.tex
+
+Dec 05 2019 (Marco)
+-> minor fixes in 01intro.tex
+-> Dan's minor fixes also included in 01intro.tex
+
+Dec 05 2019 (Marco)
+In main.tex: 
+-> added: ``high-precision'' Large Hadron...
+-> added: ...generated including ATLAS precision 7 TeV W/Z data...  
+
+Dec 04 2019 (120419_TIMv1)
+  -> Merged C.-P.'s text on App. A.1
+  -> completed draft of PDF comparisons, App. A.2
+  -> included ATL7WZ plots from Keping, associated text in App. A.3
+
+Dec 03 2019 (120319_TIMv2)
+  -> Added text to App. A
+
+Dec 03 2019 (120319_PNv1)
+  -> Fixed labels in Figs. 25 and 29 (old 28 and 32); changed 05CT18vsData.tex accordingly
+  -> Acknowledged a few people 
+
+Dec 03 2019 (120319_TIMv1)
+  -> merged revisions from C.-P. on Sect. VI
+  -> incorporated corrections from Jun, as well as other general edits
+  -> corrected likelihood function and related notation in Sect. III, App. B
+
+Dec 02 2019 (Marco)
+-> Grant added: 
+``The work of M.~Guzzi is supported by the National Science Foundation under Grant No.~PHY-1820818.''
+
+Dec 02 2019 (120219_TIMv1->2)
+  -> in progess: merge revisions to Sects. Main, I, II, IV, V
+  -> incorporated/converted 14 TeV L_{gg} plot to Sect. IV
+  -> CT18 number of experiments = 39 (e.g., in Sect. III)
+  -> L2 discussion in Sect. V streamlined for v1
+  -> revised Tables I/II
+  -> repaired instability caused by strange unicode characters
+
+Nov 30, 2019 (Sayip)
+   -> implement the revisions from Pavel in Sec. I, II (A, B) into latex and bib
+
+Nov 28, 2019
+  -> Add MSU prepritn number
+  -> remove the last two paragraphs in Sec. IV.A.1
+  -> implement the revision from Dan in Sec. VII
+
+Nov 27 2019 (112719_TIMv3)
+  -> extensive new text discussion result in App. A
+
+Nov 27 2019 (112719_TIMv1-2)
+  -> revised structure of document
+  -> temporarily removed Sect. V.D on 'other data' for v1
+  -> C.-P. revisions: Sect. I/II/III/.bib in place; other corrections
+  -> revisions and new text for App. A
+
+Nov 26 2019 (112619_TIMv1)
+  -> revisions to Sect. III
+
+Nov 26, 2019 (112619_PNv1)
+Reformatted Table XI to make self-explanatory
+
+Nov 25 2019 (112519_TIMv2)
+  -> extensive revisions throughout:
+     -Abstract
+     -Sects. I/II 
+
+Nov 25 2019 (112519_TIMv1)
+  -> edits from C.-P. merged
+  -> references fixed
+  -> revisions to Sects. I/VII included
+  -> Affiliations/Funding (Acknowledgements) updated
+
+Nov 24 2019 (112419_PNv1)
+Modified Figs. 57 and 58 to make a better distinction between CT18, CT18Z, and other PDF sets, add the "90% c.l." label
+
+Nov 24 2019 (112419_TIMv1)
+  -> edits from Sayip merged; general revisions
+
+Nov 23 2019 (112319_TIMv5) 
+  -> Edited Sect. IV; added new section on m_c
+  -> standardized PDF references
+  -> edited Sect. VII
+  -> revisions throughout
+
+Nov 23 2019 (112319_TIMv4) 
+  -> Added revisions to Sects. VI/VII from C.-P.
+
+Nov 23 2019 (112319_TIMv3) 
+  -> incorporated additional edits from Keping in Sect. V
+  -> light associated edits
+
+Nov 23 2019 (112319_TIMv2) 
+  -> incorporated ttbar material from Marco across Sects. III, V, VI
+  -> added m_c scans and descriptions (more text in-progress)
+  -> broken references fixed
+
+Nov 23 2019 (112319_TIMv1) 
+  -> merged conclusion (Sect. VII) text from C.-P.
+  -> merged Sect. V text from Jun; added Sect. I revisions
+  -> bibliography updated/extended
+
+Nov 22 2019 (112219_TIMv1) 
+  -> edits/improvements to EW Corrections section
+
+Nov 21 2019 (112119_TIMv4) 
+  -> finalized App. C
+
+Nov 21 2019 (112119_TIMv3) 
+  -> updated W+c figures with CT14HERA2
+  -> further expansions of parametrization text in App. C
+
+Nov 21 2019 (112119_TIMv2) 
+  -> updated W+c figures
+  -> added clarification of experiments that employ cov. matrix decomp.
+
+Nov 21 2019 (112119_TIMv1) 
+  -> smoothed/updated App. C discussion of PDF parametrizations 
+  -> merged new Sect. VI content from C.-P., Sayip, Ibrahim, T.-J.
+
+Nov 21 2019 (112119_Marco) 
+
+I included the following statement:
+``The work of M. Guzzi is supported by the National Science Foundation under Grant No. PHY1820818.''
+in the acknowledgments
+
+  Nov. 19 2019 (111919_TIMv1)
+
+  -> simplified the package configuration to reduce conflicts/issues under compilation
+  -> incorporated xFitter discussion into the Appendices
+
+               (111919_TIMv2)
+  -> Updated and corrected R_s discussion in Sect. IV
+  -> general corrections and improvements throughout Sect. IV
+  -> References added to .bib file
+
+                (112019_TIMv1)
+  -> Incorporated EW correction discussion from Keping
+  -> Expanded theory discussion in Sect. V
+
+                (112019_TIMv2)
+  -> Uniformized references/style through Sections I-IV
+
+                (112019_TIMv3)
+  -> Changes throughout; top-level to-do lists added at each section
+
+                (112019_TIMv4)
+  -> Smoothed App. E jet decorrelation discussion
+  -> edited jet data text in Sect. V
+  -> Updated Tables I/II with corrected chi^2 calculation from Keping
+
+                (112019_TIMv5)
+  -> Added descriptive text to ttbar discussion in Sect. V.
+
+  Nov. 11 2019 (111819_JGv1)
+
+ Below I list those major changes made in version xxx (Sect. I to Sect. IV).
+
+ 1. The plot on kinematics of data points has been moved to the very early
+ of Sect. IIA.
+
+ 2. Previous title of Sect. IIB1 was in wrong place.
+
+ 3. Previous Tables. 3-6 on chi2 of NLO fits is removed now to keep only
+ the main stream of NNLO fits.
+
+ 4. Sect. IIIA3 on top-quark production, I would rather keep a few
+ representative plots on pT_t, m_tt and y_t only. Some descriptions
+ are added.
+
+ 5. Captions on previous figure of d/u ratio are largely modified.
+
+ 6. The title of Sect.IV B has been changed to for alpha_s only
+ since I did not see any discussions on m_c and Q_0.
+
+ 7. Discussions on lumonisities have been added into Sect.IV C. 
+
+ Other questions or modifications I am not able to accomendate.
+
+ 1. On the left plot of Fig. 3 on the x-dependence scale, just to make
+ sure the PDF is not CT18X but some intermediate fit, right?
+
+ 2. In talbes 4 and 5 on the calculation programs and scales, format of
+ the two tables are different, also not sure about the distincetions
+ between them.
+
+ 3. Also to confirm in Fig. 10, those are intermediate fits, right? We
+ might need to change the labels.
+
+ 4. Related to the d/u ratio plot, we talk about the smalless of the
+ CJ15 uncertainty, which tolerence is used in that CJ15 plot?
+
+ 5. In Sect.IV B on alphas, the discussion on NLO fits are incomplete.
+ Also the NLO LM scan plot is missing. Besides, Fig. 18 is very hard to
+ read. Also no discussions are accompanied.
+
+ 6. At the end of Sect.IV A, the discussion on strangeness parametrization
+ was not clear and incomplete (we may also want to put that as an independent
+ subsection).
+
+ 7. In table. 6 it was not explained why there is a missing element for NNPDF,
+ also applied to Fig. 21.   
+
+
+ Nov. 13 2019 (191113_PNv1)
+   Added Figs. 72, 73 with LM scans on alpha_s in CT18Z
+    Minor formatting changes in various parts of the text
+
+ Nov. 11 2019 (191111_PNv2)
+    -> Revised abstract and Introduction
+    -> fixed references across the text, added the bibliography
+
+  Nov. 11 2019 (191111_PNv1)
+   -> reordered change_log.txt to show the latest changes first
+   -> 02overview.tex: retyped Table 7 about the alternative PDFs in LaTeX;
+      deleted insignificant figures in the chi^2 tables
+   
+  Nov. 06 2019 (110619_TIMv1)
+
+    -> reconciled fitting strategy sections and App. B; expanded Sect. III
+
+
+  Nov. 04 2019 (110419_TIMv1)
+
+    -> Included full section on chi^2 definition and covariance def.;
+    -> restructured Sect. III.A. to accomodate
+
+
+  Oct. 31 2019  Weekly developments:
+
+    -> incorporated Marco's initial ttbar theory discussion
+    -> expanded alpha_s discussion with error bar plots
+    -> fixed chi^2 tables
+    -> added explicit formulas for cov. matrix <--> residual conversions to Sect. II (more coming from Pavel)
+    -> incorporated more corrections from Dan
+    -> smoothed intro. text from Joey
+    -> merged contributions from Keping on ATLAS Z pT data (253)
+    -> extensive revisions throughout Sect. V
+
+ 
+ Oct. 24  Weekly developments:
+
+    -> updated Sect. I (intro) to reflect the new structure of the paper
+    -> fixed luminosity plots to have the desired normalization
+    -> similarly, repaired PDF plots; introducing a modified color scheme (thanks, Pavel/T.-J.)
+    -> fixed language describing ATL7ZW info
+    -> added LM plots for various flavors to Sect. V.
+    -> incorporated new appendix from Keping with dedicated xFitter studies
+    -> cleaned up Sect. II further; added PDFSense plots/discussion
+    -> incorporated comments from Dan
+    -> progress on Sect. V text; moving to specific experiments
+
+Oct. 18  Weekly developments:
+
+    -> Completed: added to the appendices explicit tables summarizing the fitted parameters
+    -> added Dan Stump's comments
+    -> top-level summary of ATL7WZ data added to introduction
+    -> updated plots in Sect. II; text added
+    -> sent some requests for contributions to the paper (e.g., for ttbar theory)
+    -> writing Sect. V. now; will finish in the next several days.
+    -> T.-J., PDF/lumi plots normalized to CT18??	
+
+
+
+

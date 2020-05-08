@@ -1,0 +1,143 @@
+\documentclass[%
+%preprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%showpacs,
+%preprintnumbers,
+nofootinbib,amsmath,amssymb,
+aps,
+floatfix
+]{revtex4-1}
+\pdfoutput = 1
+
+% packages
+%\usepackage{subfigure}         % Side-by-side figures and sub-captions
+\usepackage{graphicx}          % Include figures
+\usepackage{dcolumn}           % Align https://www.overleaf.com/1924541316ymnstxnhwyfftable columns on decimal point
+\usepackage{multirow}
+\usepackage{bm}                % bold math
+\usepackage{color}
+%\usepackage{xcolor}
+\usepackage[table]{xcolor}
+\usepackage{subfig}
+\usepackage[utf8]{inputenc}
+%\usepackage{etoolbox}
+%\usepackage{physics}
+%\usepackage{slashed}
+%\usepackage{extarrows}
+%\usepackage{booktabs}
+
+\definecolor{darkblue}{rgb}{0.0,0,0.5}
+\definecolor{darkred}{rgb}{0.7,0,0.0}
+\definecolor{medmagenta}{rgb}{0.3,0,0.7}
+\definecolor{darkmagenta}{rgb}{0.4,0,0.4}
+\definecolor{lightgray}{gray}{0.87}
+\usepackage[unicode=true, bookmarks=false, linkcolor = darkblue, citecolor = medmagenta, urlcolor=darkmagenta,breaklinks=false, colorlinks=true, hyperfootnotes=true]{hyperref}
+\DeclareUnicodeCharacter{FF0C}{,}
+
+%%%%%%%%%%%%%% Jun %%%%%%%%%%%%%
+\usepackage{epsfig,amssymb,amsmath,psfrag,epstopdf,color}
+\usepackage{ulem}
+\usepackage{amsthm}
+
+\newcommand{\TXT}{\textrm}
+\renewcommand{\Re}{{\rm Re\thinspace}}
+\renewcommand{\Im}{{\rm Im\thinspace}}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\red}{\textcolor{red}}
+\newcommand{\blue}{\textcolor{blue}}
+\def\met{\slash{\!\!\!\!E}_{\text{T}}}
+\def\pt{p_{\text{T}}}
+% - - - - FOR Keping's xFitter notes - - - - - - -
+\newcommand{\beaa}{\begin{equation}\begin{aligned}}
+\newcommand{\eeaa}{\end{aligned}\end{equation}}
+\newcommand{\Li}{\textrm{Li}}
+\newcommand{\Q}{Q}
+%
+\allowdisplaybreaks
+\DeclareGraphicsExtensions{.eps,.pdf,.png,.jpg,.jpeg}
+\newcommand{\eP}{\texttt{ePump }}
+\newcommand{\ePp}{\texttt{ePump.}}
+\newcommand*{\LEinline}[1]%
+{\todo[inline, size=\footnotesize]{#1}}
+
+\newcommand{\NOTE}[1]{\textcolor{darkred}{ \bf[NOTE: #1 ]}}
+\newcommand{\NOTEPN}[1]{\textcolor{blue}{\bf[NOTE: PMN -- #1 ]}}
+
+\newcommand{\CTHERAII}{CT14$_{\textrm{HERAII}}$}
+\begin{document}
+
+\preprint{MSUHEP-19-025, PITT-PACC-1911, SMU-HEP-19-03}
+
+
+\title{New CTEQ global analysis of quantum chromodynamics with high-precision data from the LHC}
+
+\author{Tie-Jiun Hou$^{(a,1)}$, Jun Gao$^{(b)}$,  T.~J.~Hobbs$^{(c,d)}$,
+Keping Xie$^{(c,e)}$,
+Sayipjamal Dulat$^{(f,2)}$, Marco Guzzi$^{(g)}$, Joey Huston$^{(h)}$, Pavel Nadolsky$^{(c,3)}$, Jon Pumplin$^{(h,\dagger)}$, Carl Schmidt$^{(h)}$, Ibrahim Sitiwaldi$^{(f)}$, Daniel Stump$^{(h)}$,  C.-P. Yuan$^{(h,4)}$}
+
+\affiliation{$^{(a)}$Department of Physics, College of Sciences, Northeastern University, Shenyang 110819, China \\
+$^{(b)}$INPAC, Shanghai Key Laboratory for Particle Physics and Cosmology \\ \& School of Physics and Astronomy, Shanghai Jiao Tong University, Shanghai 200240, China \\
+Center for High Energy Physics, Peking University, Beijing 100871, China \\
+$^{(c)}$Department of Physics, Southern Methodist University, Dallas, TX 75275-0181, U.S.A. \\
+$^{(d)}$Jefferson Lab, EIC Center, Newport News, VA 23606, U.S.A. \\
+$^{(e)}$PITT PACC, Department of Physics and Astronomy, University of Pittsburgh, Pittsburgh, PA 15260, U.S.A. \\
+$^{(f)}$School of Physics Science and Technology \\ 
+Xinjiang University, Urumqi, Xinjiang 830046 China \\
+$^{(g)}$Department of Physics, Kennesaw State University, 370 Paulding Ave.,  30144 Kennesaw, GA, U.S.A. \\
+$^{(h)}$Department of Physics and Astronomy, Michigan State University, East Lansing, MI 48824 U.S.A. \\
+}%
+\email{$^{1}$tjhou@msu.edu, 
+$^{2}$sdulat@hotmail.com, $^{3}$nadolsky@smu.edu, $^{4}$yuan@pa.msu.edu}
+\thanks{\\ $^{\dagger}$Deceased}
+
+ \date{\today}
+
+\newpage
+\begin{abstract}
+We present the new parton distribution functions (PDFs) from the CTEQ-TEA collaboration, obtained using a wide variety of high-precision Large Hadron Collider (LHC) data, in addition to the combined HERA I+II
+deep-inelastic scattering data set, along with the data sets present in the CT14 global QCD analysis. 
+%The greatest sensitivity to PDF information contained in the collider data is achieved through the inclusion of several complete data sets (such as the full rapidity coverage for the inclusive jet data samples). 
+New LHC measurements in single-inclusive jet production with the full rapidity coverage, as well as production of Drell-Yan pairs, top-quark pairs, and high-$p_T$ $Z$ bosons, are included
+to achieve the greatest sensitivity to the PDFs. The parton distributions are determined at NLO and NNLO, with each of these PDFs accompanied
+by error sets determined using the Hessian method. Fast PDF survey techniques, based on the Hessian representation and the Lagrange Multiplier method, are used to quantify the preference
+of each data set to quantities such as $\alpha_s(m_Z)$, and the gluon and strange quark distributions. We designate the main resulting PDF set as CT18. The ATLAS 7 TeV
+precision $W/Z$ data are not included in CT18, due to their tension with other data sets in the global fit.  Alternate PDF sets are generated including the ATLAS precision 7 TeV $W/Z$ data
+(CT18A), a new scale choice for low-$x$ DIS data (CT18X), or all of the above with a slightly higher choice for the charm mass (CT18Z). Theoretical calculations of standard candle cross
+sections at the LHC (such as the $gg$ fusion Higgs boson cross section) are presented. 
+\end{abstract}
+
+\pacs{12.38.-t,12.38.Bx,12.38.Aw}
+
+\maketitle
+
+\tableofcontents\newpage
+
+\renewcommand*{\thefootnote}{\arabic{footnote}}
+\setcounter{footnote}{0}
+
+% Main text
+\input{./sec/01intro.tex}
+\input{./sec/02overview.tex}
+\input{./sec/03theory.tex}
+\input{./sec/04pdfs.tex}
+\input{./sec/05CT18vsData.tex}
+\input{./sec/06stdcandles.tex}
+\input{./sec/07conclusion.tex}
+\input{./sec/99appendices.tex}
+\input{./sec/999xFitter.tex}
+
+\clearpage\newpage
+\bibliographystyle{apsrev4-1}
+%\bibliographystyle{JHEP}
+\bibliography{ct18bibtex}
+
+\input{./sec/9999Supp.tex}
+
+\end{document}
